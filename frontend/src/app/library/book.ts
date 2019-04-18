@@ -3,7 +3,8 @@ export class Book {
     public id: number,
     public title: string,
     public type: string,
-    public imageLink: string
+    public imageLink: string,
+    public numberOfDaysRented: number
   ) {
   }
 
@@ -12,7 +13,8 @@ export class Book {
       parseInt(bookResponse[0]),
       bookResponse[1],
       bookResponse[2],
-      bookResponse[3]
+      bookResponse[3],
+      1
     );
   }
 

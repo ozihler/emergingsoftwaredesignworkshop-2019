@@ -13,8 +13,10 @@ export class FeeService {
   constructor(private http: HttpClient) {
   }
 
-  calculateFee(books: Book[]): Observable<string> {
-    const booksCommand: string[][] = books.map(book => [`${book.id}`, book.title, book.type, book.imageLink]);
+  calculateFee(books: Book[], loggedInUser: string): Observable<string> {
+    const booksCommand: string[] = [];
+    booksCommand.push(loggedInUser);
+    books.map(book => booksCommand.push(`${book.id} ${book.numberOfDaysRented}`));
 
     return this.http.post<string>(environment.baseUrl + "/library/fee", booksCommand)
       .pipe(

@@ -1,3 +1,13 @@
+<div>
+  <h3>Logged in User: {{loggedInUser}}</h3>
+</div>
+
+<p-confirmDialog
+  header="Your Fee"
+  icon="pi pi-exclamation-triangle">
+
+</p-confirmDialog>
+
 <div class="ui-g">
   <div class="ui-md-6 ui-g-nopad drag-column">
     <ul style="margin:0;padding:0">
@@ -38,6 +48,7 @@
             <th>ID</th>
             <th>Title</th>
             <th>Type</th>
+            <th>Days rented</th>
           </tr>
         </ng-template>
         <ng-template pTemplate="body" let-book>
@@ -45,12 +56,16 @@
             <td>{{book.id}}</td>
             <td>{{book.title}}</td>
             <td>{{book.type}}</td>
+            <td>{{book.numberOfDaysRented}}
+              <button pButton icon="pi pi-plus-circle" (click)="increaseDaysRentedOf(book)"></button>
+            </td>
           </tr>
         </ng-template>
       </p-table>
     </div>
   </div>
 </div>
+
 
 
 
