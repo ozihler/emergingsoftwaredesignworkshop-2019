@@ -7,7 +7,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {routes} from "./routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {CodeHighlighterModule, DragDropModule, PanelModule, TabViewModule} from "primeng/primeng";
+import {ButtonModule, CodeHighlighterModule, DragDropModule, PanelModule, TabViewModule} from "primeng/primeng";
 import {LibraryComponent} from './library/library.component';
 import {TableModule} from "primeng/table";
 import {CommonModule} from "@angular/common";
@@ -29,6 +29,7 @@ import {CommonModule} from "@angular/common";
     PanelModule,
     TabViewModule,
     CommonModule,
+    ButtonModule,
     CodeHighlighterModule
   ],
   providers: [HttpClient,
