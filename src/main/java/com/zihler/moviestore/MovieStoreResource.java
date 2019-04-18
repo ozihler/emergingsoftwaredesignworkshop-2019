@@ -18,7 +18,7 @@ public class MovieStoreResource {
     @GetMapping("/movies")
     public Map<Integer, String[]> movies() throws IOException {
         // read movies from file
-        final InputStream movieStream = Main.class.getResourceAsStream("/movies.csv");
+        final InputStream movieStream = MovieStoreResource.class.getResourceAsStream("/movies.csv");
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(movieStream));
         final Map<Integer, String[]> movies = new HashMap<>();
         while (bufferedReader.ready()) {
