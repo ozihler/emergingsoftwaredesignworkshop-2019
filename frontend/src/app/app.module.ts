@@ -7,10 +7,13 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {routes} from "./routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {DragDropModule} from "primeng/primeng";
+import {LibraryComponent} from './library/library.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +22,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    DragDropModule
   ],
   providers: [HttpClient,
     {provide: "windowObject", useValue: window}],
