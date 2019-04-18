@@ -1,2 +1,48 @@
-<div pDraggable="draggableDiv" dragEffect="move">Draggable Div</div>
-{{availableBooks}}
+<div class="ui-g">
+  <div class="ui-g-12 ui-md-6 ui-g-nopad drag-column">
+    <ul style="margin:0;padding:0">
+      <li *ngFor="let book of availableBooks"
+          class="ui-helper-clearfix"
+          pDraggable="books"
+          (onDragStart)="dragStart($event,book)"
+          (onDragEnd)="dragEnd($event)">
+        <div>
+          <img
+            [src]="'assets/'+book.imageLink"
+            width="50px"
+            style="float:left"
+            draggable="false"/>
+          <span> {{book.title}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="ui-g-12 ui-md-6 drop-column"
+    pDroppable="books"
+    (onDrop)="drop($event)"
+    [ngClass]="{'ui-highlight-car':draggedBook}">
+    <p-table
+      [value]="selectedBooksBasket">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Type</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-book>
+        <tr>
+          <td>{{book.id}}</td>
+          <td>{{book.title}}</td>
+          <td>{{book.type}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
+
+
+<div class="row">
+  <button (click)="resetSelectedBooksBasket()">clear basket</button>
+</div>

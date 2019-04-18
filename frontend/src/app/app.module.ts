@@ -7,8 +7,10 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {routes} from "./routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {DragDropModule} from "primeng/primeng";
+import {CodeHighlighterModule, DragDropModule, PanelModule, TabViewModule} from "primeng/primeng";
 import {LibraryComponent} from './library/library.component';
+import {TableModule} from "primeng/table";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,12 @@ import {LibraryComponent} from './library/library.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    DragDropModule
+    DragDropModule,
+    TableModule,
+    PanelModule,
+    TabViewModule,
+    CommonModule,
+    CodeHighlighterModule
   ],
   providers: [HttpClient,
     {provide: "windowObject", useValue: window}],
