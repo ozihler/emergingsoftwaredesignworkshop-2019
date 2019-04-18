@@ -4,7 +4,6 @@ import {Book} from "./book";
 import {Observable} from "rxjs";
 import {environment} from "../../environments/environment";
 import {map} from "rxjs/operators";
-import {BooksResponse} from "./books-response";
 
 
 @Injectable({
@@ -16,9 +15,9 @@ export class BooksService {
   }
 
   getBooks(): Observable<Book[]> {
-    return this.http.get<BooksResponse>(environment.baseUrl + "/library/books")
+    return this.http.get<string[][]>(environment.baseUrl + "/library/books")
       .pipe(
-        map(booksResponse => Book.toBooks(booksResponse))
+        map(response => Book.toBooks(response))
       );
 
   }

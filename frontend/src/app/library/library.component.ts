@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Book} from "./book";
 import {BooksService} from "./books.service";
+import {FeeService} from "./fee.service";
 
 @Component({
   selector: 'app-books-overview',
@@ -12,8 +13,12 @@ export class LibraryComponent implements OnInit {
   availableBooks: Book[];
   selectedBooksBasket: Book[];
   draggedBook: Book;
+  private fee: string;
 
-  constructor(private booksService: BooksService) {
+  constructor(
+    private booksService: BooksService,
+    private feeService: FeeService
+  ) {
   }
 
   ngOnInit() {
@@ -58,5 +63,9 @@ export class LibraryComponent implements OnInit {
 
   resetSelectedBooksBasket() {
     this.initialise();
+  }
+
+  calculateFee() {
+    this.feeService.calculateFee(this.selectedBooksBasket).subscribe(fee => this.fee = fee);
   }
 }
