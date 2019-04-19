@@ -1,4 +1,4 @@
-package com.zihler.moviestore;
+package com.zihler.library;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -15,16 +15,16 @@ public class Library {
 
     @GetMapping("/books")
     public List<String[]> getBooks() throws IOException {
-        final InputStream movieStream = Library.class.getResourceAsStream("/movies.csv");
-        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(movieStream));
-        final List<String[]> movies = new ArrayList<>();
+        final InputStream booksStream = Library.class.getResourceAsStream("/books.csv");
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(booksStream));
+        final List<String[]> books = new ArrayList<>();
         while (bufferedReader.ready()) {
             final String line = bufferedReader.readLine();
-            final String[] movie = line.split(";");
-            movies.add(movie);
+            final String[] book = line.split(";");
+            books.add(book);
 
         }
-        return movies;
+        return books;
     }
 
     @PostMapping("/fee")

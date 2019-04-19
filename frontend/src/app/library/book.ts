@@ -2,6 +2,7 @@ export class Book {
   private constructor(
     public id: number,
     public title: string,
+    public authors: string,
     public type: string,
     public imageLink: string,
     public numberOfDaysRented: number
@@ -14,6 +15,7 @@ export class Book {
       bookResponse[1],
       bookResponse[2],
       bookResponse[3],
+      bookResponse[4],
       1
     );
   }

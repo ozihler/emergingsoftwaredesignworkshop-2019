@@ -18,11 +18,12 @@
           (onDragEnd)="dragEnd($event)">
         <div>
           <img
-            [src]="'assets/'+book.imageLink"
-            width="30px"
+            [src]="book.imageLink"
+            width="50px"
             style="float:left"
             draggable="false"/>
           <span> {{book.title}}</span>
+          <span> {{book.authors}}</span>
         </div>
       </li>
     </ul>
