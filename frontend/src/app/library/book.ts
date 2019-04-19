@@ -21,7 +21,6 @@ export class Book {
   }
 
   static toBooks(books: string[][]): Book[] {
-    return books
-      .map(book => this.of(book));
+    return books.map(book => this.of(book));
   }
 }
