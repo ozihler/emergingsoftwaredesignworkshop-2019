@@ -72,7 +72,7 @@ export class LibraryComponent implements OnInit {
     this.feeService.calculateFee(this.selectedBooksBasket, this.loggedInUser)
       .subscribe(fee => {
         this.confirmationService.confirm({
-          message: `${fee}`,
+          message: `${fee}`.replace(/\n/g,'<br/>'),
           header:"Your fee",
           acceptLabel:"Accept",
           rejectLabel:"Reject",

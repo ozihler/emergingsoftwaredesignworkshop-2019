@@ -27,4 +27,9 @@ public class IndustryIdentifiers {
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
+
+    @Override
+    public String toString() {
+        return "{\"type\" : " + (type == null ? null : type) + ",\"identifier\" : " + (identifier == null ? null : identifier) + "}";
+    }
 }

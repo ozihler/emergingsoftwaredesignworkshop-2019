@@ -189,4 +189,9 @@ public class VolumeInfo {
         this.infoLink = infoLink;
         this.canonicalVolumeLink = canonicalVolumeLink;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{\"title\" : %s,\"authors\" : %s,\"publisher\" : %s,\"publishDate\" : %s,\"description\" : %s,\"industryIdentifiers\" : %s,\"readingModes\" : %s,\"pageCount\" : %d,\"printType\" : %s,\"categories\" : %s,\"maturityRating\" : %s,\"AllowAnonLogging\" : %s,\"contentVersion\" : %s,\"imageLinks\" : %s,\"language\" : %s,\"previewLink\" : %s,\"infoLink\" : %s,\"canonicalVolumeLink\" : %s}", title, authors, publisher, publishDate, description, industryIdentifiers, readingModes, pageCount, printType, categories, maturityRating, AllowAnonLogging, contentVersion, imageLinks, language, previewLink, infoLink, canonicalVolumeLink);
+    }
 }

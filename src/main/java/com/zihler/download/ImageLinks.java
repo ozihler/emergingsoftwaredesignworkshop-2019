@@ -27,4 +27,9 @@ public class ImageLinks {
     public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
     }
+
+    @Override
+    public String toString() {
+        return "{\"smallThumbnail\" : " + (smallThumbnail == null ? null : smallThumbnail) + ",\"thumbnail\" : " + (thumbnail == null ? null : thumbnail) + "}";
+    }
 }

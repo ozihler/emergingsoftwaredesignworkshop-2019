@@ -6,23 +6,26 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
 @CrossOrigin
 @RestController
 @RequestMapping("/library")
 public class Library {
 
-    @GetMapping("/books")
-    public List<String[]> getBooks() throws IOException {
-        final InputStream booksStream = Library.class.getResourceAsStream("/books.csv");
-        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(booksStream));
+    @GetMapping(value = "/books", produces = APPLICATION_JSON_UTF8_VALUE)
+    public List<String[]> getBooks() throws IOException, URISyntaxException {
         final List<String[]> books = new ArrayList<>();
-        while (bufferedReader.ready()) {
-            final String line = bufferedReader.readLine();
+        List<String> lines = Files.readAllLines(Paths.get(Library.class.getResource("/books.csv").toURI()));
+        for (String line : lines) {
             final String[] book = line.split(";");
             books.add(book);
-
         }
         return books;
     }
@@ -31,14 +34,13 @@ public class Library {
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) throws IOException {
         String customerName = rentalRequests.remove(0);
 
-        final InputStream movieStream = Library.class.getResourceAsStream("/movies.csv");
-        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(movieStream));
-        final List<String[]> movies = new ArrayList<>();
+        final InputStream bookStream = Library.class.getResourceAsStream("/books.csv");
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(bookStream));
+        final List<String[]> books = new ArrayList<>();
         while (bufferedReader.ready()) {
             final String line = bufferedReader.readLine();
-            final String[] movie = line.split(";");
-            movies.add(movie);
-
+            final String[] book = line.split(";");
+            books.add(book);
         }
 
         double totalAmount = 0;
@@ -47,21 +49,20 @@ public class Library {
 
         for (int i = 0; i < rentalRequests.size(); i++) {
             final String[] rental = rentalRequests.get(i).split(" ");
-            final String[] movie = movies.get(Integer.parseInt(rental[0]));
+            final String[] book = books.get(Integer.parseInt(rental[0]));
             double thisAmount = 0;
 
             int daysRented = Integer.parseInt(rental[1]);
-            //determine amounts for rental
-            switch (movie[2]) {
-                case "REGULAR":
+            switch (book[3]) {
+                case "NOT_FOR_SALE":
                     thisAmount += 2;
                     if (daysRented > 2)
                         thisAmount += (daysRented - 2) * 1.5;
                     break;
-                case "NEW_RELEASE":
+                case "FOR_SALE":
                     thisAmount += daysRented * 3;
                     break;
-                case "CHILDRENS":
+                case "FREE":
                     thisAmount += 1.5;
                     if (daysRented > 3)
                         thisAmount += (daysRented - 3) * 1.5;
@@ -71,16 +72,16 @@ public class Library {
             // add frequent renter points
             frequentRenterPoints++;
             // add bonus for a two day new release rental
-            if (movie[2].equals("NEW_RELEASE") && daysRented > 1) {
+            if (book[2].equals("NEW_RELEASE") && daysRented > 1) {
                 frequentRenterPoints++;
             }
             // show figures for this rental
-            result += "\t" + movie[1] + "\t" + thisAmount + "\n";
+            result += "\t'" + book[1] + "' by '" + book[2] + "' for " + daysRented + " days: \t" + thisAmount + " $\n";
             totalAmount += thisAmount;
         }
 
         // add footer lines
-        result += "You owed " + totalAmount + "\n";
+        result += "You owe " + totalAmount + " $\n";
         result += "You earned " + frequentRenterPoints + " frequent renter points\n";
 
         return List.of(result);

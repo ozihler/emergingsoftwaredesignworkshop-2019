@@ -3,8 +3,9 @@
 </div>
 
 <p-confirmDialog
+  width="1024"
   header="Your Fee"
-  icon="pi pi-exclamation-triangle">
+  icon="pi pi-info">
 
 </p-confirmDialog>
 
@@ -33,11 +34,11 @@
        [ngClass]="{'ui-highlight-car':draggedBook}">
     <div
       class="ui-g-1 ui-md-1">
-      <button pButton icon="pi pi-times-circle" (click)="resetSelectedBooksBasket()"></button>
+      <button pButton icon="pi pi-times-circle" (click)="resetSelectedBooksBasket()" [disabled]="selectedBooksBasket.length === 0"></button>
     </div>
     <div
       class="ui-g-1 ui-md-1">
-      <button pButton icon="pi pi-save" (click)="calculateFee()"></button>
+      <button pButton icon="pi pi-save" (click)="calculateFee()" [disabled]="selectedBooksBasket.length === 0"></button>
     </div>
     <div
       class="ui-g-12 ui-md-12">

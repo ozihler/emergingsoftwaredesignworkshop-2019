@@ -17,4 +17,9 @@ public class SearchInfo {
     public void setTextSnippet(String textSnippet) {
         this.textSnippet = textSnippet;
     }
+
+    @Override
+    public String toString() {
+        return "{\"textSnippet\" : " + textSnippet + "}";
+    }
 }

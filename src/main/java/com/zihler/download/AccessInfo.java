@@ -107,4 +107,9 @@ public class AccessInfo {
     public void setQuoteSharingAllowed(boolean quoteSharingAllowed) {
         this.quoteSharingAllowed = quoteSharingAllowed;
     }
+
+    @Override
+    public String toString() {
+        return "{\"country\" : " + (country) + ",\"viewability\" : " + (viewability) + ",\"embeddable\" : " + (embeddable) + ",\"publicDomain\" : " + (publicDomain) + ",\"textToSpeechPermission\" : " + (textToSpeechPermission) + ",\"epub\" : " + (epub) + ",\"pdf\" : " + (pdf) + ",\"webReaderLink\" : " + (webReaderLink) + ",\"accessViewStatus\" : " + (accessViewStatus) + ",\"quoteSharingAllowed\" : " + (quoteSharingAllowed) + "}";
+    }
 }

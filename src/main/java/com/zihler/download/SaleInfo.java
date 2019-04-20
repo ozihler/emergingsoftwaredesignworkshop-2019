@@ -37,4 +37,9 @@ public class SaleInfo {
     public void setEbook(boolean ebook) {
         isEbook = ebook;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{\"country\" : %s,\"saleability\" : %s,\"isEbook\" : %s}", country, saleability, isEbook);
+    }
 }

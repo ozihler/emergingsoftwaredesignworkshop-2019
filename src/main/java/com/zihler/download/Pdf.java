@@ -17,4 +17,9 @@ public class Pdf {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+
+    @Override
+    public String toString() {
+        return "{\"isAvailable\" : " + isAvailable + "}";
+    }
 }

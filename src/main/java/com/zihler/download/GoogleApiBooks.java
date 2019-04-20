@@ -39,4 +39,10 @@ public class GoogleApiBooks {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+
+    @Override
+    public String toString() {
+        return "{\"kind\" : " + (kind == null ? null : "\"" + kind + "\"") + ",\"totalItems\" : " + totalItems + ",\"items\" : " + (items == null ? null : items) + "}";
+    }
 }

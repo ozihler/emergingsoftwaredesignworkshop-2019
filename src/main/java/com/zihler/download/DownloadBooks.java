@@ -10,11 +10,17 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DownloadBooks {
-    public static void main(String[] args) throws IOException {
-        List<String> queries = Arrays.asList("refactoring", "clean%20code", "extreme%20programming", "scrum", "agile", "lean");
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        List<String> queries = Arrays.asList(
+                "refactoring"
+                , "clean%20code",
+                "extreme%20programming",
+                "scrum",
+                "agile",
+                "lean"
+        );
         for (String query : queries) {
             GoogleApiBooks booksFromQuery = query(query);
             appendToFile(booksFromQuery);
@@ -22,8 +28,8 @@ public class DownloadBooks {
 
     }
 
-    private static void appendToFile(GoogleApiBooks booksFromQuery) throws IOException {
-        Path path = Paths.get("C:/Users/olzi/Downloads/template-master/src/main/resources/books.csv");
+    private static void appendToFile(GoogleApiBooks booksFromQuery) throws IOException, URISyntaxException {
+        Path path = Paths.get(DownloadBooks.class.getResource("/books.csv").toURI());
 
         int idCounter = Files.readAllLines(path).size();
         for (Item item : booksFromQuery.getItems()) {
@@ -55,9 +61,9 @@ public class DownloadBooks {
     private static String join(Item item) {
         List<String> authors = item.getVolumeInfo().getAuthors();
         if (authors == null) {
-            return "";
+            return "unknown";
         }
-        return authors.stream().collect(Collectors.joining(","));
+        return String.join(",", authors);
     }
 
     private static GoogleApiBooks query(String query) {

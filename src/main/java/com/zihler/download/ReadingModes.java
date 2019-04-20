@@ -27,4 +27,10 @@ public class ReadingModes {
     public void setImage(boolean image) {
         this.image = image;
     }
+
+
+    @Override
+    public String toString() {
+        return "{\"text\" : " + text + ",\"image\" : " + image + "}";
+    }
 }
