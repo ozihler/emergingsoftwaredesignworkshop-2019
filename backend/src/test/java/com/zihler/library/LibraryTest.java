@@ -1,12 +1,11 @@
 package com.zihler.library;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.tomcat.jni.Library;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.MockMvc;

@@ -1,14 +1,11 @@
 package com.zihler.library;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +16,24 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 @RequestMapping("/library")
 public class Library {
 
+    ResourceLoader resourceLoader;
+
+    @Autowired
+    public Library(ResourceLoader resourceLoader) {
+        this.resourceLoader = resourceLoader;
+
+    }
+
     @GetMapping(value = "/books", produces = APPLICATION_JSON_UTF8_VALUE)
-    public List<String[]> getBooks() throws IOException, URISyntaxException {
+    public List<String[]> getBooks() throws IOException {
         final List<String[]> books = new ArrayList<>();
-        List<String> lines = Files.readAllLines(Paths.get(Library.class.getResource("/books.csv").toURI()));
-        for (String line : lines) {
+        final BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(
+                        resourceLoader.getResource("classpath:books.csv").getInputStream()
+                )
+        );
+        while (bufferedReader.ready()) {
+            final String line = bufferedReader.readLine();
             final String[] book = line.split(";");
             books.add(book);
         }
@@ -34,8 +44,7 @@ public class Library {
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) throws IOException {
         String customerName = rentalRequests.remove(0);
 
-        final InputStream bookStream = Library.class.getResourceAsStream("/books.csv");
-        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(bookStream));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(resourceLoader.getResource("classpath:books.csv").getInputStream()));
         final List<String[]> books = new ArrayList<>();
         while (bufferedReader.ready()) {
             final String line = bufferedReader.readLine();
