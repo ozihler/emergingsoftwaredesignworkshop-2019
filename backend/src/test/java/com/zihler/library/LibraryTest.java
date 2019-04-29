@@ -13,8 +13,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -33,6 +31,7 @@ public class LibraryTest {
     }
 
     @Ignore
+    @Test
     public void getAllBooks() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/library/books")
@@ -48,6 +47,8 @@ public class LibraryTest {
     }
 
     @Ignore
+    @Test
+
     public void getSubsetOfAllBooks() throws Exception {
         MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders
                 .post("/library/fee")
@@ -72,6 +73,7 @@ public class LibraryTest {
     }
 
     @Ignore
+    @Test
     public void getSubsetOfAllBooks2() throws Exception {
         MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders
                 .post("/library/fee")
