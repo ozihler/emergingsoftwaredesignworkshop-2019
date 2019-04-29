@@ -92,4 +92,8 @@ public class Item {
     public String toString() {
         return "{\"kind\" : " + (kind == null ? null : kind) + ",\"id\" : " + (id == null ? null : id) + ",\"etag\" : " + (etag == null ? null : etag) + ",\"selfLink\" : " + (selfLink == null ? null : selfLink) + ",\"volumeInfo\" : " + (volumeInfo == null ? null : volumeInfo) + ",\"saleInfo\" : " + (saleInfo == null ? null : saleInfo) + ",\"accessInfo\" : " + (accessInfo == null ? null : accessInfo) + ",\"searchInfo\" : " + (searchInfo == null ? null : searchInfo) + "}";
     }
+
+    boolean hasAverageRating() {
+        return getVolumeInfo().getAverageRating() > 0;
+    }
 }

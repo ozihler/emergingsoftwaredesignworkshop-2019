@@ -13,6 +13,8 @@ public class VolumeInfo {
     int pageCount;
     String printType;
     List<String> categories;
+    double averageRating;
+    int ratingsCount;
     String maturityRating;
     boolean AllowAnonLogging;
     String contentVersion;
@@ -169,7 +171,15 @@ public class VolumeInfo {
     public VolumeInfo() {
     }
 
-    public VolumeInfo(String title, List<String> authors, String publisher, String publishDate, String description, List<IndustryIdentifiers> industryIdentifiers, ReadingModes readingModes, int pageCount, String printType, List<String> categories, String maturityRating, boolean allowAnonLogging, String contentVersion, ImageLinks imageLinks, String language, String previewLink, String infoLink, String canonicalVolumeLink) {
+    public Integer getRatingsCount() {
+        return ratingsCount;
+    }
+
+    public Double getAverageRating() {
+        return averageRating;
+    }
+
+    public VolumeInfo(String title, List<String> authors, String publisher, String publishDate, String description, List<IndustryIdentifiers> industryIdentifiers, ReadingModes readingModes, int pageCount, String printType, List<String> categories, Double averageRating, Integer ratingsCount, String maturityRating, boolean allowAnonLogging, String contentVersion, ImageLinks imageLinks, String language, String previewLink, String infoLink, String canonicalVolumeLink) {
         this.title = title;
         this.authors = authors;
         this.publisher = publisher;
@@ -180,6 +190,8 @@ public class VolumeInfo {
         this.pageCount = pageCount;
         this.printType = printType;
         this.categories = categories;
+        this.averageRating = averageRating;
+        this.ratingsCount = ratingsCount;
         this.maturityRating = maturityRating;
         AllowAnonLogging = allowAnonLogging;
         this.contentVersion = contentVersion;
@@ -188,6 +200,14 @@ public class VolumeInfo {
         this.previewLink = previewLink;
         this.infoLink = infoLink;
         this.canonicalVolumeLink = canonicalVolumeLink;
+    }
+
+    public void setAverageRating(Double averageRating) {
+        this.averageRating = averageRating;
+    }
+
+    public void setRatingsCount(Integer ratingsCount) {
+        this.ratingsCount = ratingsCount;
     }
 
     @Override

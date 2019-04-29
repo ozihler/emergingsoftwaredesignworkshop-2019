@@ -14,8 +14,12 @@ import java.util.List;
 public class DownloadBooks {
     public static void main(String[] args) throws IOException, URISyntaxException {
         List<String> queries = Arrays.asList(
-                "refactoring"
-                , "clean%20code",
+                "fantasy",
+                "drama",
+                "Lord%20of%20the%20rings",
+                "science%20fiction",
+                "refactoring",
+                "clean%20code",
                 "extreme%20programming",
                 "scrum",
                 "agile",
@@ -33,15 +37,25 @@ public class DownloadBooks {
 
         int idCounter = Files.readAllLines(path).size();
         for (Item item : booksFromQuery.getItems()) {
+
+//            if (!item.hasAverageRating()) {
+//                continue;
+//            }
+
             String thingsToSave = (idCounter++) + ";"
                     + item.getVolumeInfo().getTitle()
                     + ";" + join(item)
-                    + ";" + item.getSaleInfo().getSaleability()
+                    + ";" + getStrategyValue(item)
                     + ";" + imageLink(item)
                     + "\n";
+
             Files.write(path, thingsToSave.getBytes(), StandardOpenOption.APPEND);  //Append mode
         }
 
+    }
+
+    private static Double getStrategyValue(Item item) {
+        return item.getVolumeInfo().getAverageRating();
     }
 
     private static String imageLink(Item item) {

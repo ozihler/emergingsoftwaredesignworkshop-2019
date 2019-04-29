@@ -1,60 +1,310 @@
-0;Refactoring;Martin Fowler,Kent Beck;NOT_FOR_SALE;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-1;Refactoring to patterns;Joshua Kerievsky;NOT_FOR_SALE;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-2;Refactoring;Martin Fowler;NOT_FOR_SALE;http://books.google.com/books/content?id=ffwePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-3;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;NOT_FOR_SALE;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-4;Refactoring in der Ontologiegetriebenen Softwareentwicklung;Erik Tittel;FOR_SALE;http://books.google.com/books/content?id=V51DDt1GEVMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-5;Refactoring oder: Wie Sie das Design vorhandener Software verbessern;Martin Fowler;NOT_FOR_SALE;http://books.google.com/books/content?id=UUpIAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-6;Refactoring in Large Software Projects;Martin Lippert,Stephen Roock;FOR_SALE;http://books.google.com/books/content?id=bCEYuB83ROcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-7;Refactoring Workbook;William C. Wake;NOT_FOR_SALE;http://books.google.com/books/content?id=KE-zdnHQehYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-8;Genome Refactoring;Natalie Kuldell,Neal Lerner;NOT_FOR_SALE;http://books.google.com/books/content?id=PGSFbBNTo4gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-9;Refactoring with Relations. A New Method for Refactoring Object-Oriented Software;Sergio Pissanetzky, Jr.;NOT_FOR_SALE;http://books.google.com/books/content?id=9b5KEn052usC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-10;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;NOT_FOR_SALE;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-11;Mehr als Clean Code;Andreas Lennartz;FOR_SALE;http://books.google.com/books/content?id=_UeoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-12;Clean Code;Robert C. Martin;FOR_SALE;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-13;Clean Code in Python;Mariano Anaya;FOR_SALE;http://books.google.com/books/content?id=ZB9sDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-14;Clean Code Development;Karsten Samaschke;NOT_FOR_SALE;/assets/images/sample-book.png
-15;Design Patterns;Erich Gamma,Richard Helm,Ralph Johnson,John Vlissides;FOR_SALE;http://books.google.com/books/content?id=lYyXBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-16;Clean Coder;Robert C. Martin;NOT_FOR_SALE;http://books.google.com/books/content?id=rHBZAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-17;The Beauty of Functional Code;Peter Achten,Pieter Koopman;FOR_SALE;http://books.google.com/books/content?id=1Sm6BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-18;The Code of Federal Regulations of the United States of America;;FREE;http://books.google.com/books/content?id=pgU7AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-19;Code Complete;Steve McConnell;FOR_SALE;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-20;eXtreme programming in action;Martin Lippert,Stefan Roock,Henning Wolf;NOT_FOR_SALE;http://books.google.com/books/content?id=IHtGAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-21;Extreme Programming;Kent Beck;NOT_FOR_SALE;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-22;Cybersecurity: The Essential Body Of Knowledge;Dan Shoemaker,Wm. Arthur Conklin;NOT_FOR_SALE;http://books.google.com/books/content?id=AqRl1JARvIsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-23;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;NOT_FOR_SALE;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-24;Implantando Governança Ágil - MAnGve;Alexandre Luna;FOR_SALE;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-25;Programming Proverbs;Henry F. Ledgard;NOT_FOR_SALE;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-26;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;NOT_FOR_SALE;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-27;Expert-C-Programmierung;Peter Van der Linden;NOT_FOR_SALE;/assets/images/sample-book.png
-28;Structured programming in PL/C;Gerald M. Weinberg,Norie Yasukawa,Robert Marcus;NOT_FOR_SALE;http://books.google.com/books/content?id=FdtWAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-29;Popular Computing;;NOT_FOR_SALE;http://books.google.com/books/content?id=RRopAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-30;Agiles IT-Projektmanagement mit Scrum;Jonas Tewolde;FOR_SALE;http://books.google.com/books/content?id=9oCc9O7yFJIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-31;Agiles Projektmanagement mit Scrum;Eric Dreyer;NOT_FOR_SALE;http://books.google.com/books/content?id=i1memNPPqUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-32;Scrum - verstehen und erfolgreich einsetzen;Stefan Roock,Henning Wolf;NOT_FOR_SALE;http://books.google.com/books/content?id=-NlNDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-33;Scrum;Boris Gloger;FOR_SALE;http://books.google.com/books/content?id=NfGgDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-34;Scrum;Roman Pichler;FOR_SALE;http://books.google.com/books/content?id=J6h3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-35;Mit Scrum zum gewünschten System;Joachim Goll,Daniel Hommel;FOR_SALE;http://books.google.com/books/content?id=ZzMwCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-36;Scrum – Einführung in der Unternehmenspraxis;Dominik Maximini;FOR_SALE;http://books.google.com/books/content?id=9xtJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-37;Agiles Projektmanagement - Agilität und Scrum im klassischen Projektumfeld;Jörg Preußig;NOT_FOR_SALE;http://books.google.com/books/content?id=Gp4qDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-38;Analyse der Möglichkeiten für den Wissenstransfer von Business in die Scrum Teams;Allen Hintermann;FOR_SALE;http://books.google.com/books/content?id=yekuqz90aU4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-39;Agile Softwareentwicklung;Mike Cohn;NOT_FOR_SALE;http://books.google.com/books/content?id=AAECyPcN3UoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-40;Agile Organisationen;André Häusling;NOT_FOR_SALE;http://books.google.com/books/content?id=QBQ4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-41;Agile Softwareentwicklung;Mike Cohn;NOT_FOR_SALE;http://books.google.com/books/content?id=AAECyPcN3UoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-42;Agile Moderation;Thomas Tiller;FOR_SALE;http://books.google.com/books/content?id=619-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-43;Agile Prozesse: Von XP über Scrum bis MAP;Eckhart Hanser;FOR_SALE;http://books.google.com/books/content?id=G29LC_Kt2mkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-44;Agile Testing;Manfred Baumgartner,Martin Klonk,Helmut Pichler,Richard Seidl,Siegfried Tanczos;FOR_SALE;http://books.google.com/books/content?id=xag7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-45;Agile Produktentwicklung;Axel Schröder;FOR_SALE;http://books.google.com/books/content?id=UcFwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-46;Der agile Festpreis;Andreas Opelt,Boris Gloger,Wolfgang Pfarl,Ralf Mittermayr;FOR_SALE;http://books.google.com/books/content?id=rejwAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-47;SOA für agile Unternehmen;Wolfgang Beinhauer;NOT_FOR_SALE;http://books.google.com/books/content?id=TufMCNwS9HgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-48;Agile Führung;Stefan Scherber,Michael Lang;NOT_FOR_SALE;http://books.google.com/books/content?id=h-PGBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-49;Agile Techniken für klassisches Projektmanagement;Nils Pröpper;NOT_FOR_SALE;http://books.google.com/books/content?id=Z9uqdlQSaOEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-50;Lean Management;Werner Pfeiffer,Enno Weiss;NOT_FOR_SALE;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-51;Lean Six Sigma;Armin Töpfer;NOT_FOR_SALE;http://books.google.com/books/content?id=QariSuW7xcoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-52;Lean TPM;Andreas Reitz;NOT_FOR_SALE;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-53;Change Management. Übertragung von Lean-Methoden und -Werkzeugen von der Produktion in den Verwaltungsbereich;Tuptus Virtual;FOR_SALE;http://books.google.com/books/content?id=shKO3HHYCM4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-54;Fourth Lean Management Summit;;NOT_FOR_SALE;http://books.google.com/books/content?id=vxfCyIrIHDAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-55;Die Einführung von lean management als Betriebsänderung im Sinne des § 111 BetrVG und die Konsequenzen für den Unternehmer in Form von Interessenausgleich und Sozialplan gem. § 112 BetrVG;Thomas Hölscher;FOR_SALE;http://books.google.com/books/content?id=NOL-09aJVtEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-56;Lean-Management;Wilhelm Schultheiß;NOT_FOR_SALE;http://books.google.com/books/content?id=jwtmJjj9iwYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-57;Lean Six Sigma bei Finanzdienstleistern;Roland Schurig;FOR_SALE;http://books.google.com/books/content?id=NvRXEFdx2GwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-58;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;NOT_FOR_SALE;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-59;Lean Interim;Dietmar Dold;NOT_FOR_SALE;http://books.google.com/books/content?id=sTQQVltxv_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+0;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+1;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+2;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+3;Die Monster, die ich rief;Larry Correia;5;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+4;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+5;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+6;Refactoring;Martin Fowler,Kent Beck;4;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+7;Refactoring to patterns;Joshua Kerievsky;4;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+8;Clean Code;Robert C. Martin;4;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+9;Code Complete;Steve McConnell;4;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+10;Extreme Programming;Kent Beck;5;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+11;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+12;Implantando Governança Ágil - MAnGve;Alexandre Luna;4;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+13;Programming Proverbs;Henry F. Ledgard;4;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+14;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+15;Lean Management;Werner Pfeiffer,Enno Weiss;5;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+16;Lean TPM;Andreas Reitz;4;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+17;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+18;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+19;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+20;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+21;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+22;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+23;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+24;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+25;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+26;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+27;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+28;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+29;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+30;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+31;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+32;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+33;Lean Management;Werner Pfeiffer,Enno Weiss;5.0;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+34;Lean TPM;Andreas Reitz;4.0;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+35;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4.0;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+36;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+37;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+38;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+39;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+40;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+41;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+42;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+43;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+44;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+45;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+46;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+47;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+48;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+49;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+50;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+51;Lean Management;Werner Pfeiffer,Enno Weiss;5.0;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+52;Lean TPM;Andreas Reitz;4.0;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+53;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4.0;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+54;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+55;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+56;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+57;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+58;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+59;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+60;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+61;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+62;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+63;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+64;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+65;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+66;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+67;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+68;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+69;Lean Management;Werner Pfeiffer,Enno Weiss;5.0;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+70;Lean TPM;Andreas Reitz;4.0;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+71;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4.0;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+72;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+73;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+74;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+75;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+76;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+77;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+78;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+79;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+80;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+81;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+82;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+83;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+84;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+85;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+86;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+87;Lean Management;Werner Pfeiffer,Enno Weiss;5.0;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+88;Lean TPM;Andreas Reitz;4.0;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+89;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4.0;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+90;Brady Games Crisis Core - Final Fantasy VII;Doug Walsh;0.0;http://books.google.com/books/content?id=jfvFK1iAEH4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+91;Fantasy;Helmut W. Pesch;0.0;http://books.google.com/books/content?id=QtwoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+92;Phantastisch Lesen - Eine Fantasy-Enzyklopädie;Marcel-Alexander Bemme;0.0;http://books.google.com/books/content?id=ba3WyfLrhRUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+93;Fantasy - aber ohne doofe Elfen;Uwe Post;0.0;http://books.google.com/books/content?id=uE06Tl4S4bkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+94;Wie man einen Fantasy-Bestseller schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=-ZoqAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+95;Lustiges Taschenbuch Fantasy 02;Massimo De Vita,Carlo Panaro,Walt Disney;0.0;http://books.google.com/books/content?id=QKlrCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+96;Quest for Fantasy #1;Alfred Bekker,Hendrik M. Bekker,Mara Laue;0.0;http://books.google.com/books/content?id=GLjjBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+97;M/S Color Fantasy;Klaus-Michael Borisch;0.0;http://books.google.com/books/content?id=pcbeBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+98;Moments of Fantasy;Elke Lützner;0.0;http://books.google.com/books/content?id=ZGZODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+99;Wie Man Einen Fantasy-Bestseller Schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=CnpGf8zz-5sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+100;Zwischen Drama und Erzählung;Holger Korthals;0.0;http://books.google.com/books/content?id=G-Xqe_iwN60C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+101;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+102;Theater und Drama;Horst Turk;0.0;http://books.google.com/books/content?id=d3Q7vKG3uaAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+103;Gewalt im Drama und auf der Bühne;Hans-Jürgen Diller,Uwe-Karsten Ketelsen,Hans Ulrich Seeber;0.0;http://books.google.com/books/content?id=Havi73hA8k4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+104;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+105;Teaching Classics of American Drama;Maria Eisenmann;0.0;http://books.google.com/books/content?id=z68XbyGqtHcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+106;Gattungsprobleme des Domestic Drama im literarhistorischen Kontext des achtzehnten Jahrhunderts;Doris Feldmann;0.0;http://books.google.com/books/content?id=4NIX9XbDbV8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+107;Emblematik und Drama im Zeitalter des Barock;Albrecht Schöne;0.0;http://books.google.com/books/content?id=fFNIKbacDpUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+108;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+109;Das deutsche Drama;Albert Ludwig,Friedrich Michael,Max Josef Wolff,Rudolf Wolkan;0.0;http://books.google.com/books/content?id=2MdI30b3t4cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+110;Der kleine Hobbit;J. R. R. Tolkien;0.0;http://books.google.com/books/content?id=yRP0ugAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+111;Der Ring der Drachen;Eric Lustbader;0.0;http://books.google.com/books/content?id=12TkAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+112;Das Gehirn meiner Großmutter;Tanya Byron;0.0;http://books.google.com/books/content?id=cRxmCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+113;Wie ein Ruf in der Stille;Sandra Brown;0.0;http://books.google.com/books/content?id=WINAgajKbMMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+114;Wilbur und Charlotte;Elwyn B. White,Garth Williams;0.0;http://books.google.com/books/content?id=ew_MPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+115;Die Erschließung Des Dunklen Erdteils;David Livingstone;0.0;http://books.google.com/books/content?id=vvG7Vz2zbMAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+116;Der Herr der Ringe - Tarot;Terry Donaldson;0.0;http://books.google.com/books/content?id=ZEZPPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+117;Deutschland nebst Theilen der Angrenzenden Länder ...;Karl Baedeker;0.0;http://books.google.com/books/content?id=I0YQAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+118;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+119;Gattungsprobleme in der anglo-amerikanischen Literatur;Raimund Borgmeier;0.0;http://books.google.com/books/content?id=6jkfAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+120;Science fiction;Manfred Nagl;0.0;http://books.google.com/books/content?id=pcSIAuOi5joC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+121;Science-fiction als social fiction;Torben Schröder;0.0;http://books.google.com/books/content?id=PC6cjGIlOmYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+122;Technik und Gesellschaft in der Science-Fiction. 2. Auflage;Jan Fuhse;0.0;http://books.google.com/books/content?id=ilahs82g_gUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+123;Deutsche Science Fiction 1870-1914;Roland Innerhofer;0.0;http://books.google.com/books/content?id=JPphfpOTeKkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+124;Utopie, Anarchismus und Science Fiction;Peter Seyferth;0.0;http://books.google.com/books/content?id=RjSj-nvCQnAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+125;Cyberpunk Science Fiction;Jiré Emine Gözen;0.0;http://books.google.com/books/content?id=duXWBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+126;Wörterbuch der Science-Fiction;Peter Schlobinski,Oliver Siebold;0.0;http://books.google.com/books/content?id=fV4HCsdBWB4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+127;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+128;Das Science Fiction Jahr 2014;Sascha Mamczak,Sebastian Pirling,Wolfgang Jeschke;0.0;http://books.google.com/books/content?id=_ahNBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+129;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+130;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+131;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+132;Refactoring;Martin Fowler;0.0;http://books.google.com/books/content?id=ffwePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+133;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;0.0;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+134;Refactoring in Large Software Projects;Martin Lippert,Stephen Roock;0.0;http://books.google.com/books/content?id=bCEYuB83ROcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+135;Refactoring oder: Wie Sie das Design vorhandener Software verbessern;Martin Fowler;0.0;http://books.google.com/books/content?id=UUpIAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+136;Refactoring Workbook;William C. Wake;0.0;http://books.google.com/books/content?id=KE-zdnHQehYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+137;Genome Refactoring;Natalie Kuldell,Neal Lerner;0.0;http://books.google.com/books/content?id=PGSFbBNTo4gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+138;Refactoring with Relations. A New Method for Refactoring Object-Oriented Software;Sergio Pissanetzky, Jr.;0.0;http://books.google.com/books/content?id=9b5KEn052usC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+139;Refactoring in der Ontologiegetriebenen Softwareentwicklung;Erik Tittel;0.0;http://books.google.com/books/content?id=V51DDt1GEVMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+140;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;0.0;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+141;Mehr als Clean Code;Andreas Lennartz;0.0;http://books.google.com/books/content?id=_UeoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+142;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+143;Clean Code in Python;Mariano Anaya;0.0;http://books.google.com/books/content?id=ZB9sDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+144;Clean Code Development;Karsten Samaschke;0.0;/assets/images/sample-book.png
+145;Design Patterns;Erich Gamma,Richard Helm,Ralph Johnson,John Vlissides;0.0;http://books.google.com/books/content?id=lYyXBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+146;Clean Coder;Robert C. Martin;0.0;http://books.google.com/books/content?id=rHBZAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+147;The Beauty of Functional Code;Peter Achten,Pieter Koopman;0.0;http://books.google.com/books/content?id=1Sm6BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+148;The Code of Federal Regulations of the United States of America;unknown;0.0;http://books.google.com/books/content?id=pgU7AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+149;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+150;eXtreme programming in action;Martin Lippert,Stefan Roock,Henning Wolf;0.0;http://books.google.com/books/content?id=IHtGAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+151;Cybersecurity: The Essential Body Of Knowledge;Dan Shoemaker,Wm. Arthur Conklin;0.0;http://books.google.com/books/content?id=AqRl1JARvIsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+152;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+153;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+154;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+155;Extreme Programming planen;Kent Beck,Martin Fowler;0.0;/assets/images/sample-book.png
+156;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+157;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+158;Structured programming in PL/C;Gerald M. Weinberg,Norie Yasukawa,Robert Marcus;0.0;http://books.google.com/books/content?id=FdtWAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+159;Expert-C-Programmierung;Peter Van der Linden;0.0;/assets/images/sample-book.png
+160;Agiles IT-Projektmanagement mit Scrum;Jonas Tewolde;0.0;http://books.google.com/books/content?id=9oCc9O7yFJIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+161;Agiles Projektmanagement mit Scrum;Eric Dreyer;0.0;http://books.google.com/books/content?id=i1memNPPqUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+162;Scrum - verstehen und erfolgreich einsetzen;Stefan Roock,Henning Wolf;0.0;http://books.google.com/books/content?id=-NlNDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+163;Der Stellenwert von Scrum-Zertifizierungen;Andreas Lakmann;0.0;http://books.google.com/books/content?id=0JJQDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+164;Scrum;Roman Pichler;0.0;http://books.google.com/books/content?id=J6h3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+165;Scrum;Boris Gloger;0.0;http://books.google.com/books/content?id=NfGgDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+166;Mit Scrum zum gewünschten System;Joachim Goll,Daniel Hommel;0.0;http://books.google.com/books/content?id=ZzMwCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+167;Scrum – Einführung in der Unternehmenspraxis;Dominik Maximini;0.0;http://books.google.com/books/content?id=9xtJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+168;Analyse der Möglichkeiten für den Wissenstransfer von Business in die Scrum Teams;Allen Hintermann;0.0;http://books.google.com/books/content?id=yekuqz90aU4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+169;Agiles Projektmanagement - Agilität und Scrum im klassischen Projektumfeld;Jörg Preußig;0.0;http://books.google.com/books/content?id=Gp4qDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+170;Agile Softwareentwicklung;Mike Cohn;0.0;http://books.google.com/books/content?id=AAECyPcN3UoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+171;Agile Organisationen;André Häusling;0.0;http://books.google.com/books/content?id=QBQ4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+172;Gestaltungshinweise für agile Software-Entwicklungsprojekte unter dem Blickwinkel der Kybernetik;Ulrich Biberger;0.0;http://books.google.com/books/content?id=c2ErgweGm3wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+173;Agile Moderation;Thomas Tiller;0.0;http://books.google.com/books/content?id=619-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+174;Agile Prozesse: Von XP über Scrum bis MAP;Eckhart Hanser;0.0;http://books.google.com/books/content?id=G29LC_Kt2mkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+175;Agile Testing;Manfred Baumgartner,Martin Klonk,Helmut Pichler,Richard Seidl,Siegfried Tanczos;0.0;http://books.google.com/books/content?id=xag7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+176;Agile Produktentwicklung;Axel Schröder;0.0;http://books.google.com/books/content?id=UcFwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+177;Der agile Festpreis;Andreas Opelt,Boris Gloger,Wolfgang Pfarl,Ralf Mittermayr;0.0;http://books.google.com/books/content?id=rejwAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+178;Agile Führung;Stefan Scherber,Michael Lang;0.0;http://books.google.com/books/content?id=h-PGBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+179;SOA für agile Unternehmen;Wolfgang Beinhauer;0.0;http://books.google.com/books/content?id=TufMCNwS9HgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+180;Lean Management;Werner Pfeiffer,Enno Weiss;5.0;http://books.google.com/books/content?id=xy47RgxZ3_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+181;Lean Six Sigma;Armin Töpfer;0.0;http://books.google.com/books/content?id=QariSuW7xcoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+182;Lean TPM;Andreas Reitz;4.0;http://books.google.com/books/content?id=0Qh_Lg5foWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+183;Fourth Lean Management Summit;unknown;0.0;http://books.google.com/books/content?id=vxfCyIrIHDAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+184;Die Einführung von lean management als Betriebsänderung im Sinne des § 111 BetrVG und die Konsequenzen für den Unternehmer in Form von Interessenausgleich und Sozialplan gem. § 112 BetrVG;Thomas Hölscher;0.0;http://books.google.com/books/content?id=NOL-09aJVtEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+185;Lean-Management;Wilhelm Schultheiß;0.0;http://books.google.com/books/content?id=jwtmJjj9iwYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+186;Lean Six Sigma bei Finanzdienstleistern;Roland Schurig;0.0;http://books.google.com/books/content?id=NvRXEFdx2GwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+187;Six Sigma+Lean Toolset;Olin Roenpage,Christian Staudter,Renata Meran,Alexander John,Carmen Beernaert;4.0;http://books.google.com/books/content?id=ty6ojSp-HiwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+188;Lean Interim;Dietmar Dold;0.0;http://books.google.com/books/content?id=sTQQVltxv_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+189;Erfolgsfaktor Lean Management 2.0;Hansjörg Künzel;0.0;http://books.google.com/books/content?id=2rPsDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+190;Brady Games Crisis Core - Final Fantasy VII;Doug Walsh;0.0;http://books.google.com/books/content?id=jfvFK1iAEH4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+191;Fantasy;Helmut W. Pesch;0.0;http://books.google.com/books/content?id=QtwoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+192;Phantastisch Lesen - Eine Fantasy-Enzyklopädie;Marcel-Alexander Bemme;0.0;http://books.google.com/books/content?id=ba3WyfLrhRUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+193;Fantasy - aber ohne doofe Elfen;Uwe Post;0.0;http://books.google.com/books/content?id=uE06Tl4S4bkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+194;Wie man einen Fantasy-Bestseller schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=-ZoqAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+195;Lustiges Taschenbuch Fantasy 02;Massimo De Vita,Carlo Panaro,Walt Disney;0.0;http://books.google.com/books/content?id=QKlrCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+196;Quest for Fantasy #1;Alfred Bekker,Hendrik M. Bekker,Mara Laue;0.0;http://books.google.com/books/content?id=GLjjBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+197;M/S Color Fantasy;Klaus-Michael Borisch;0.0;http://books.google.com/books/content?id=pcbeBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+198;Moments of Fantasy;Elke Lützner;0.0;http://books.google.com/books/content?id=ZGZODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+199;Wie Man Einen Fantasy-Bestseller Schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=CnpGf8zz-5sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+200;Zwischen Drama und Erzählung;Holger Korthals;0.0;http://books.google.com/books/content?id=G-Xqe_iwN60C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+201;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+202;Theater und Drama;Horst Turk;0.0;http://books.google.com/books/content?id=d3Q7vKG3uaAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+203;Gewalt im Drama und auf der Bühne;Hans-Jürgen Diller,Uwe-Karsten Ketelsen,Hans Ulrich Seeber;0.0;http://books.google.com/books/content?id=Havi73hA8k4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+204;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+205;Teaching Classics of American Drama;Maria Eisenmann;0.0;http://books.google.com/books/content?id=z68XbyGqtHcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+206;Gattungsprobleme des Domestic Drama im literarhistorischen Kontext des achtzehnten Jahrhunderts;Doris Feldmann;0.0;http://books.google.com/books/content?id=4NIX9XbDbV8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+207;Emblematik und Drama im Zeitalter des Barock;Albrecht Schöne;0.0;http://books.google.com/books/content?id=fFNIKbacDpUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+208;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+209;Das deutsche Drama;Albert Ludwig,Friedrich Michael,Max Josef Wolff,Rudolf Wolkan;0.0;http://books.google.com/books/content?id=2MdI30b3t4cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+210;Der kleine Hobbit;J. R. R. Tolkien;0.0;http://books.google.com/books/content?id=yRP0ugAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+211;Der Ring der Drachen;Eric Lustbader;0.0;http://books.google.com/books/content?id=12TkAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+212;Das Gehirn meiner Großmutter;Tanya Byron;0.0;http://books.google.com/books/content?id=cRxmCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+213;Wie ein Ruf in der Stille;Sandra Brown;0.0;http://books.google.com/books/content?id=WINAgajKbMMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+214;Wilbur und Charlotte;Elwyn B. White,Garth Williams;0.0;http://books.google.com/books/content?id=ew_MPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+215;Die Erschließung Des Dunklen Erdteils;David Livingstone;0.0;http://books.google.com/books/content?id=vvG7Vz2zbMAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+216;Der Herr der Ringe - Tarot;Terry Donaldson;0.0;http://books.google.com/books/content?id=ZEZPPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+217;Deutschland nebst Theilen der Angrenzenden Länder ...;Karl Baedeker;0.0;http://books.google.com/books/content?id=I0YQAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+218;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+219;Gattungsprobleme in der anglo-amerikanischen Literatur;Raimund Borgmeier;0.0;http://books.google.com/books/content?id=6jkfAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+220;Science fiction;Manfred Nagl;0.0;http://books.google.com/books/content?id=pcSIAuOi5joC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+221;Science-fiction als social fiction;Torben Schröder;0.0;http://books.google.com/books/content?id=PC6cjGIlOmYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+222;Technik und Gesellschaft in der Science-Fiction. 2. Auflage;Jan Fuhse;0.0;http://books.google.com/books/content?id=ilahs82g_gUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+223;Deutsche Science Fiction 1870-1914;Roland Innerhofer;0.0;http://books.google.com/books/content?id=JPphfpOTeKkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+224;Utopie, Anarchismus und Science Fiction;Peter Seyferth;0.0;http://books.google.com/books/content?id=RjSj-nvCQnAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+225;Cyberpunk Science Fiction;Jiré Emine Gözen;0.0;http://books.google.com/books/content?id=duXWBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+226;Wörterbuch der Science-Fiction;Peter Schlobinski,Oliver Siebold;0.0;http://books.google.com/books/content?id=fV4HCsdBWB4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+227;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+228;Das Science Fiction Jahr 2014;Sascha Mamczak,Sebastian Pirling,Wolfgang Jeschke;0.0;http://books.google.com/books/content?id=_ahNBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+229;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+230;Refactoring;Martin Fowler,Kent Beck;4.5;http://books.google.com/books/content?id=UTgFCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+231;Refactoring to patterns;Joshua Kerievsky;4.5;http://books.google.com/books/content?id=h2sdNbKW65gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+232;Refactoring;Martin Fowler;0.0;http://books.google.com/books/content?id=ffwePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+233;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;0.0;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+234;Refactoring in Large Software Projects;Martin Lippert,Stephen Roock;0.0;http://books.google.com/books/content?id=bCEYuB83ROcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+235;Refactoring oder: Wie Sie das Design vorhandener Software verbessern;Martin Fowler;0.0;http://books.google.com/books/content?id=UUpIAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+236;Refactoring Workbook;William C. Wake;0.0;http://books.google.com/books/content?id=KE-zdnHQehYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+237;Genome Refactoring;Natalie Kuldell,Neal Lerner;0.0;http://books.google.com/books/content?id=PGSFbBNTo4gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+238;Refactoring with Relations. A New Method for Refactoring Object-Oriented Software;Sergio Pissanetzky, Jr.;0.0;http://books.google.com/books/content?id=9b5KEn052usC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+239;Refactoring in der Ontologiegetriebenen Softwareentwicklung;Erik Tittel;0.0;http://books.google.com/books/content?id=V51DDt1GEVMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+240;Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code;Robert C. Martin;0.0;http://books.google.com/books/content?id=7pVbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+241;Mehr als Clean Code;Andreas Lennartz;0.0;http://books.google.com/books/content?id=_UeoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+242;Clean Code;Robert C. Martin;4.5;http://books.google.com/books/content?id=_i6bDeoCQzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+243;Clean Code in Python;Mariano Anaya;0.0;http://books.google.com/books/content?id=ZB9sDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+244;Clean Code Development;Karsten Samaschke;0.0;/assets/images/sample-book.png
+245;Design Patterns;Erich Gamma,Richard Helm,Ralph Johnson,John Vlissides;0.0;http://books.google.com/books/content?id=lYyXBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+246;Clean Coder;Robert C. Martin;0.0;http://books.google.com/books/content?id=rHBZAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+247;The Beauty of Functional Code;Peter Achten,Pieter Koopman;0.0;http://books.google.com/books/content?id=1Sm6BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+248;The Code of Federal Regulations of the United States of America;unknown;0.0;http://books.google.com/books/content?id=pgU7AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+249;Code Complete;Steve McConnell;4.0;http://books.google.com/books/content?id=LpVCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+250;eXtreme programming in action;Martin Lippert,Stefan Roock,Henning Wolf;0.0;http://books.google.com/books/content?id=IHtGAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+251;Cybersecurity: The Essential Body Of Knowledge;Dan Shoemaker,Wm. Arthur Conklin;0.0;http://books.google.com/books/content?id=AqRl1JARvIsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+252;Extreme Programming;Kent Beck;5.0;http://books.google.com/books/content?id=79dSpPDQdLYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+253;OPTIMIZATION METHODS FOR ENGINEERS;N.V.S. Raju;5.0;http://books.google.com/books/content?id=-r1nAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+254;Implantando Governança Ágil - MAnGve;Alexandre Luna;4.0;http://books.google.com/books/content?id=zmeECgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+255;Extreme Programming planen;Kent Beck,Martin Fowler;0.0;/assets/images/sample-book.png
+256;Programming Proverbs;Henry F. Ledgard;4.0;http://books.google.com/books/content?id=e9AmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+257;Der Pragmatische Programmierer;Andrew Hunt,David Thomas;5.0;http://books.google.com/books/content?id=wzvjQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+258;Structured programming in PL/C;Gerald M. Weinberg,Norie Yasukawa,Robert Marcus;0.0;http://books.google.com/books/content?id=FdtWAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+259;Expert-C-Programmierung;Peter Van der Linden;0.0;/assets/images/sample-book.png
+260;Agiles IT-Projektmanagement mit Scrum;Jonas Tewolde;0.0;http://books.google.com/books/content?id=9oCc9O7yFJIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+261;Agiles Projektmanagement mit Scrum;Eric Dreyer;0.0;http://books.google.com/books/content?id=i1memNPPqUMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+262;Scrum - verstehen und erfolgreich einsetzen;Stefan Roock,Henning Wolf;0.0;http://books.google.com/books/content?id=-NlNDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+263;Der Stellenwert von Scrum-Zertifizierungen;Andreas Lakmann;0.0;http://books.google.com/books/content?id=0JJQDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+264;Scrum;Roman Pichler;0.0;http://books.google.com/books/content?id=J6h3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+265;Scrum;Boris Gloger;0.0;http://books.google.com/books/content?id=NfGgDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+266;Mit Scrum zum gewünschten System;Joachim Goll,Daniel Hommel;0.0;http://books.google.com/books/content?id=ZzMwCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+267;Scrum – Einführung in der Unternehmenspraxis;Dominik Maximini;0.0;http://books.google.com/books/content?id=9xtJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+268;Analyse der Möglichkeiten für den Wissenstransfer von Business in die Scrum Teams;Allen Hintermann;0.0;http://books.google.com/books/content?id=yekuqz90aU4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+269;Agiles Projektmanagement - Agilität und Scrum im klassischen Projektumfeld;Jörg Preußig;0.0;http://books.google.com/books/content?id=Gp4qDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+270;Brady Games Crisis Core - Final Fantasy VII;Doug Walsh;0.0;http://books.google.com/books/content?id=jfvFK1iAEH4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+271;Fantasy;Helmut W. Pesch;0.0;http://books.google.com/books/content?id=QtwoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+272;Phantastisch Lesen - Eine Fantasy-Enzyklopädie;Marcel-Alexander Bemme;0.0;http://books.google.com/books/content?id=ba3WyfLrhRUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+273;Fantasy - aber ohne doofe Elfen;Uwe Post;0.0;http://books.google.com/books/content?id=uE06Tl4S4bkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+274;Wie man einen Fantasy-Bestseller schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=-ZoqAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+275;Lustiges Taschenbuch Fantasy 02;Massimo De Vita,Carlo Panaro,Walt Disney;0.0;http://books.google.com/books/content?id=QKlrCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+276;Quest for Fantasy #1;Alfred Bekker,Hendrik M. Bekker,Mara Laue;0.0;http://books.google.com/books/content?id=GLjjBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+277;M/S Color Fantasy;Klaus-Michael Borisch;0.0;http://books.google.com/books/content?id=pcbeBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+278;Moments of Fantasy;Elke Lützner;0.0;http://books.google.com/books/content?id=ZGZODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+279;Wie Man Einen Fantasy-Bestseller Schreibt;Holger de Grandpair;0.0;http://books.google.com/books/content?id=CnpGf8zz-5sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+280;Zwischen Drama und Erzählung;Holger Korthals;0.0;http://books.google.com/books/content?id=G-Xqe_iwN60C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+281;Drama im Augenblick seines Sturzes;Franz-Josef Deiters;5.0;http://books.google.com/books/content?id=YoMxy7Mx288C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+282;Theater und Drama;Horst Turk;0.0;http://books.google.com/books/content?id=d3Q7vKG3uaAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+283;Gewalt im Drama und auf der Bühne;Hans-Jürgen Diller,Uwe-Karsten Ketelsen,Hans Ulrich Seeber;0.0;http://books.google.com/books/content?id=Havi73hA8k4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+284;Gestörte Kommunikation im amerikanischen Drama;Marion Hebach;5.0;http://books.google.com/books/content?id=Nz3uabniaLoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+285;Teaching Classics of American Drama;Maria Eisenmann;0.0;http://books.google.com/books/content?id=z68XbyGqtHcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+286;Gattungsprobleme des Domestic Drama im literarhistorischen Kontext des achtzehnten Jahrhunderts;Doris Feldmann;0.0;http://books.google.com/books/content?id=4NIX9XbDbV8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+287;Emblematik und Drama im Zeitalter des Barock;Albrecht Schöne;0.0;http://books.google.com/books/content?id=fFNIKbacDpUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+288;Leidenschaft und Vernunft im Drama des Sturm und Drang;Nagla El-Dandoush;3.0;http://books.google.com/books/content?id=g2w-fb_sK7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+289;Das deutsche Drama;Albert Ludwig,Friedrich Michael,Max Josef Wolff,Rudolf Wolkan;0.0;http://books.google.com/books/content?id=2MdI30b3t4cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+290;Der kleine Hobbit;J. R. R. Tolkien;0.0;http://books.google.com/books/content?id=yRP0ugAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+291;Der Ring der Drachen;Eric Lustbader;0.0;http://books.google.com/books/content?id=12TkAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+292;Das Gehirn meiner Großmutter;Tanya Byron;0.0;http://books.google.com/books/content?id=cRxmCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+293;Wie ein Ruf in der Stille;Sandra Brown;0.0;http://books.google.com/books/content?id=WINAgajKbMMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+294;Wilbur und Charlotte;Elwyn B. White,Garth Williams;0.0;http://books.google.com/books/content?id=ew_MPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+295;Die Erschließung Des Dunklen Erdteils;David Livingstone;0.0;http://books.google.com/books/content?id=vvG7Vz2zbMAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+296;Der Herr der Ringe - Tarot;Terry Donaldson;0.0;http://books.google.com/books/content?id=ZEZPPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+297;Deutschland nebst Theilen der Angrenzenden Länder ...;Karl Baedeker;0.0;http://books.google.com/books/content?id=I0YQAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+298;Die Monster, die ich rief;Larry Correia;5.0;http://books.google.com/books/content?id=kWglAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+299;Gattungsprobleme in der anglo-amerikanischen Literatur;Raimund Borgmeier;0.0;http://books.google.com/books/content?id=6jkfAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+300;Science fiction;Manfred Nagl;0.0;http://books.google.com/books/content?id=pcSIAuOi5joC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+301;Science-fiction als social fiction;Torben Schröder;0.0;http://books.google.com/books/content?id=PC6cjGIlOmYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+302;Technik und Gesellschaft in der Science-Fiction. 2. Auflage;Jan Fuhse;0.0;http://books.google.com/books/content?id=ilahs82g_gUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+303;Deutsche Science Fiction 1870-1914;Roland Innerhofer;0.0;http://books.google.com/books/content?id=JPphfpOTeKkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+304;Utopie, Anarchismus und Science Fiction;Peter Seyferth;0.0;http://books.google.com/books/content?id=RjSj-nvCQnAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+305;Cyberpunk Science Fiction;Jiré Emine Gözen;0.0;http://books.google.com/books/content?id=duXWBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+306;Wörterbuch der Science-Fiction;Peter Schlobinski,Oliver Siebold;0.0;http://books.google.com/books/content?id=fV4HCsdBWB4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+307;Science Fiction in der deutschsprachigen Literatur;Hans-Edwin Friedrich;5.0;http://books.google.com/books/content?id=jfgTnCn2V-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+308;Das Science Fiction Jahr 2014;Sascha Mamczak,Sebastian Pirling,Wolfgang Jeschke;0.0;http://books.google.com/books/content?id=_ahNBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+309;Das Science Fiction Jahr 2010;Sascha Mamczak,Wolfgang Jeschke;1.0;http://books.google.com/books/content?id=yHGt8Y-Fr5QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api

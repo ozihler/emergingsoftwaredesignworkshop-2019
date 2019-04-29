@@ -1,5 +1,5 @@
 <div>
-  <h3>Logged in User: {{loggedInUser}}</h3>
+  <h3>Logged in User: <span style="color:red">{{loggedInUser}}</span></h3>
 </div>
 
 <p-confirmDialog
@@ -32,6 +32,10 @@
   <div class="ui-md-6 drop-column" pDroppable="books"
        (onDrop)="drop($event)"
        [ngClass]="{'ui-highlight-car':draggedBook}">
+
+    <div>
+      <span><b>You selected the following books: </b></span>
+    </div>
     <div
       class="ui-g-1 ui-md-1">
       <button pButton icon="pi pi-times-circle" (click)="resetSelectedBooksBasket()" [disabled]="selectedBooksBasket.length === 0"></button>
@@ -69,7 +73,3 @@
     </div>
   </div>
 </div>
-
-
-
-

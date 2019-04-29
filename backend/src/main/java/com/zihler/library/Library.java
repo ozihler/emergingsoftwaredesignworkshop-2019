@@ -13,7 +13,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/library")
+@RequestMapping("api/library")
 public class Library {
 
     ResourceLoader resourceLoader;
@@ -62,16 +62,17 @@ public class Library {
             double thisAmount = 0;
 
             int daysRented = Integer.parseInt(rental[1]);
-            switch (book[3]) {
-                case "NOT_FOR_SALE":
+            String averageRating =  book[3];
+            switch (averageRating) {
+                case "REGULAR":
                     thisAmount += 2;
                     if (daysRented > 2)
                         thisAmount += (daysRented - 2) * 1.5;
                     break;
-                case "FOR_SALE":
+                case "NEW_RELEASE":
                     thisAmount += daysRented * 3;
                     break;
-                case "FREE":
+                case "CHILDRENS":
                     thisAmount += 1.5;
                     if (daysRented > 3)
                         thisAmount += (daysRented - 3) * 1.5;
@@ -80,11 +81,13 @@ public class Library {
 
             // add frequent renter points
             frequentRenterPoints++;
+
             // add bonus for a two day new release rental
-            if (book[2].equals("NEW_RELEASE") && daysRented > 1) {
+            if (averageRating.equals("REGULAR") && daysRented > 1) {
                 frequentRenterPoints++;
             }
-            // show figures for this rental
+
+            // create figures for this rental
             result += "\t'" + book[1] + "' by '" + book[2] + "' for " + daysRented + " days: \t" + thisAmount + " $\n";
             totalAmount += thisAmount;
         }
