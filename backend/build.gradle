@@ -21,6 +21,8 @@ repositories {
     mavenCentral()
 }
 
+// https://stackoverflow.com/questions/26389679/running-spring-app-built-with-gradle-on-heroku?rq=1
+// https://stackoverflow.com/questions/33727502/gradle-leftshift-operator-with-task-needed-is-it-superfluous
 task stage(type: Copy, dependsOn: [clean, build]) {
     from jar.archivePath
     into project.rootDir
