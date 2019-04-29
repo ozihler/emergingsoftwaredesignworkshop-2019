@@ -1,7 +1,7 @@
 language: java
 jdk:
-   - openjdk-ea
+  - oraclejdk12
 deploy:
   provider: heroku
-  api_key:
-    secure: "48a054ac-bfdf-46c8-8a17-b5e48f5ed8a4"
+  api-key:
+    secure: $HEROKU_API_KEY
