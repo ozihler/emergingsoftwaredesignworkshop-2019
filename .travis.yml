@@ -1,7 +1,6 @@
 language: java
 jdk:
-  - openjdk12
-  - openjdk-ea
+   - openjdk-ea
 deploy:
   provider: heroku
   api_key:
