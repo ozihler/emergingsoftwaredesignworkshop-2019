@@ -1,8 +1,6 @@
 language: java
-addons:
-  apt:
-    packages:
-      - oracle-java12-installer
+jdk:
+  - oraclejdk12
 deploy:
   provider: heroku
   api_key:
