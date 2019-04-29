@@ -30,10 +30,11 @@ task stage(type: Copy, dependsOn: [clean, build]) {
 }
 stage.mustRunAfter(clean)
 
-clean << {
-    project.file('app.jar').delete()
+clean {
+    doLast {
+        project.file('app.jar').delete()
+    }
 }
-
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-actuator')
     implementation('org.springframework.boot:spring-boot-starter-data-rest')
