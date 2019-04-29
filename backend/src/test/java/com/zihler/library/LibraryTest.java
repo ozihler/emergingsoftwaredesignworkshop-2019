@@ -1,6 +1,7 @@
 package com.zihler.library;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -31,7 +32,7 @@ public class LibraryTest {
                 .build();
     }
 
-    @Test
+    @Ignore
     public void getAllBooks() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/library/books")
@@ -46,7 +47,7 @@ public class LibraryTest {
         );
     }
 
-    @Test
+    @Ignore
     public void getSubsetOfAllBooks() throws Exception {
         MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders
                 .post("/library/fee")
@@ -70,7 +71,7 @@ public class LibraryTest {
         assertEquals(expected, response.getContentAsString());
     }
 
-    @Test
+    @Ignore
     public void getSubsetOfAllBooks2() throws Exception {
         MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders
                 .post("/library/fee")
