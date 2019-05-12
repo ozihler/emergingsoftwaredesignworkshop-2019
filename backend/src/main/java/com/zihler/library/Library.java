@@ -1,11 +1,11 @@
 package com.zihler.library;
 
+import com.zihler.library.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,12 +44,17 @@ public class Library {
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) throws IOException {
         String customerName = rentalRequests.remove(0);
 
-        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(resourceLoader.getResource("classpath:books.csv").getInputStream()));
-        final List<String[]> books = new ArrayList<>();
+        final BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(
+                        resourceLoader.getResource("classpath:books.csv")
+                                .getInputStream()
+                )
+        );
+
+        final List<Book> books = new ArrayList<>();
+
         while (bufferedReader.ready()) {
-            final String line = bufferedReader.readLine();
-            final String[] book = line.split(";");
-            books.add(book);
+            books.add(Book.from(bufferedReader.readLine()));
         }
 
         double totalAmount = 0;
@@ -58,11 +63,11 @@ public class Library {
 
         for (int i = 0; i < rentalRequests.size(); i++) {
             final String[] rental = rentalRequests.get(i).split(" ");
-            final String[] book = books.get(Integer.parseInt(rental[0]));
+            final Book book = books.get(Integer.parseInt(rental[0]));
             double thisAmount = 0;
 
             int daysRented = Integer.parseInt(rental[1]);
-            String readingMode =  book[3];
+            String readingMode = book.readingMode;
             switch (readingMode) {
                 case "IMAGE":
                     thisAmount += 2;
@@ -88,7 +93,7 @@ public class Library {
             }
 
             // create figures for this rental
-            result += "\t'" + book[1] + "' by '" + book[2] + "' for " + daysRented + " days: \t" + thisAmount + " $\n";
+            result += "\t'" + book.title + "' by '" + book.authors + "' for " + daysRented + " days: \t" + thisAmount + " $\n";
             totalAmount += thisAmount;
         }
 
@@ -98,5 +103,6 @@ public class Library {
 
         return List.of(result);
     }
+
 }
 
