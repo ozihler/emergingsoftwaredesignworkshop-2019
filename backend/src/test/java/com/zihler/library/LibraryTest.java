@@ -1,6 +1,8 @@
 package com.zihler.library;
 
+import com.zihler.library.application.BookService;
 import com.zihler.library.dataaccess.BookRepository;
+import com.zihler.library.application.IRetrieveBooks;
 import com.zihler.library.presentation.Library;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +32,8 @@ public class LibraryTest {
     public void setup() throws IOException {
         DefaultResourceLoader resourceLoader = new DefaultResourceLoader();
 
-        library = new Library(new BookRepository(resourceLoader));
+        final IRetrieveBooks IRetrieveBooks = new BookRepository(resourceLoader);
+        library = new Library(new BookService(IRetrieveBooks));
         mvc = MockMvcBuilders.standaloneSetup(library)
                 .build();
     }

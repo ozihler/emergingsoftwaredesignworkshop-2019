@@ -1,4 +1,4 @@
-package com.zihler.library.presentation;
+package com.zihler.library.application;
 
 import com.zihler.library.domain.Rental;
 import com.zihler.library.domain.RentalRecord;
@@ -10,11 +10,11 @@ public class Receipt {
         this.rentalRecord = rentalRecord;
     }
 
-    static Receipt createFor(RentalRecord rentalRecord) {
+    public static Receipt createFor(RentalRecord rentalRecord) {
         return new Receipt(rentalRecord);
     }
 
-    String formatForDisplay() {
+    public String formatForDisplay() {
         String result = appendHeader();
         result += appendRentals();
         result += appendFooter();

@@ -1,15 +1,15 @@
 package com.zihler.library.domain;
 
-import com.zihler.library.dataaccess.BookRepository;
+import com.zihler.library.application.IRetrieveBooks;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RentalFactory {
-    private BookRepository bookRepository;
+    private IRetrieveBooks IRetrieveBooks;
 
-    public RentalFactory(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public RentalFactory(IRetrieveBooks IRetrieveBooks) {
+        this.IRetrieveBooks = IRetrieveBooks;
     }
 
     public List<Rental> createFrom(List<String> rentalRequests) {
@@ -24,7 +24,7 @@ public class RentalFactory {
         final String[] rentalData = nextRequest.split(" ");
 
         return create(
-                bookRepository.getByKey(Integer.parseInt(rentalData[0])),
+                IRetrieveBooks.getByKey(Integer.parseInt(rentalData[0])),
                 Integer.parseInt(rentalData[1])
         );
     }
