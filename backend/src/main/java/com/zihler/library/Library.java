@@ -82,8 +82,8 @@ public class Library {
             // add frequent renter points
             frequentRenterPoints++;
 
-            // add bonus for a two day new release rental
-            if (readingMode.equals("REGULAR") && daysRented > 1) {
+            // add bonus for a reading mode "both"
+            if (readingMode.equals("BOTH") && daysRented > 1) {
                 frequentRenterPoints++;
             }
 
