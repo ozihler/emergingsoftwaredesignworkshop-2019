@@ -1,7 +1,7 @@
 package com.zihler.library.domain;
 
 public class ImageRental extends Rental {
-    ImageRental(Book book, int daysRented) {
+    public ImageRental(Book book, int daysRented) {
         super(book, daysRented);
     }
 

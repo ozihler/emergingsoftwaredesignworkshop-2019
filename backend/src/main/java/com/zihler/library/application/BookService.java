@@ -2,7 +2,6 @@ package com.zihler.library.application;
 
 import com.zihler.library.domain.Book;
 import com.zihler.library.domain.Rental;
-import com.zihler.library.domain.RentalFactory;
 import com.zihler.library.domain.RentalRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

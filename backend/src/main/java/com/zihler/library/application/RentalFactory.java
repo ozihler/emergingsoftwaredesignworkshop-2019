@@ -1,21 +1,22 @@
-package com.zihler.library.domain;
+package com.zihler.library.application;
 
-import com.zihler.library.application.IRetrieveBooks;
+import com.zihler.library.domain.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RentalFactory {
+class RentalFactory {
     private IRetrieveBooks IRetrieveBooks;
 
-    public RentalFactory(IRetrieveBooks IRetrieveBooks) {
+    RentalFactory(IRetrieveBooks IRetrieveBooks) {
         this.IRetrieveBooks = IRetrieveBooks;
     }
 
-    public List<Rental> createFrom(List<String> rentalRequests) {
+    List<Rental> createFrom(List<String> rentalRequests) {
         List<Rental> rentals = new ArrayList<>();
-        for (int i = 0; i < rentalRequests.size(); i++) {
-            rentals.add(createFrom(rentalRequests.get(i)));
+        for (String rentalRequest : rentalRequests) {
+            Rental from = createFrom(rentalRequest);
+            rentals.add(from);
         }
         return rentals;
     }
