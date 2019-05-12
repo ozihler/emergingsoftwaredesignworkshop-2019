@@ -1,9 +1,9 @@
 package com.zihler.library;
 
+import com.zihler.library.dataaccess.BookRepository;
 import com.zihler.library.domain.Book;
 import com.zihler.library.domain.Rental;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
@@ -17,46 +17,36 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 @RequestMapping("api/library")
 public class Library {
 
-    ResourceLoader resourceLoader;
+    private BookRepository bookRepository;
 
     @Autowired
-    public Library(ResourceLoader resourceLoader) {
-        this.resourceLoader = resourceLoader;
-
+    public Library(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
     }
 
     @GetMapping(value = "/books", produces = APPLICATION_JSON_UTF8_VALUE)
-    public List<String[]> getBooks() throws IOException {
-        final List<String[]> books = new ArrayList<>();
-        final BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(
-                        resourceLoader.getResource("classpath:books.csv").getInputStream()
-                )
-        );
-        while (bufferedReader.ready()) {
-            final String line = bufferedReader.readLine();
-            final String[] book = line.split(";");
-            books.add(book);
+    public List<String[]> getBooks() {
+        List<Book> all = this.bookRepository.getAll();
+        ArrayList<String[]> booksAsStringArray = new ArrayList<>();
+        for (Book book : all) {
+            booksAsStringArray.add(
+                    new String[]{
+                            Integer.toString(book.getKey()),
+                            book.getTitle(),
+                            book.getAuthors(),
+                            book.getReadingMode(),
+                            book.getLink()
+                    }
+            );
         }
-        return books;
+        return booksAsStringArray;
     }
 
     @PostMapping("/fee")
-    public List<String> calculateFee(@RequestBody List<String> rentalRequests) throws IOException {
+    public List<String> calculateFee(@RequestBody List<String> rentalRequests) {
         String customerName = rentalRequests.remove(0);
 
-        final BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(
-                        resourceLoader.getResource("classpath:books.csv")
-                                .getInputStream()
-                )
-        );
-
-        final List<Book> books = new ArrayList<>();
-
-        while (bufferedReader.ready()) {
-            books.add(Book.from(bufferedReader.readLine()));
-        }
+        final List<Book> books = bookRepository.getAll();
 
         double totalAmount = 0;
         int frequentRenterPoints = 0;
@@ -65,9 +55,12 @@ public class Library {
         for (int i = 0; i < rentalRequests.size(); i++) {
             String nextRequest = rentalRequests.get(i);
             final String[] rentalData = nextRequest.split(" ");
-            final Book book = books.get(Integer.parseInt(rentalData[0]));
-            int daysRented = Integer.parseInt(rentalData[1]);
-            Rental rental = new Rental(book, daysRented);
+
+            Rental rental = new Rental(
+                    bookRepository.getByKey(Integer.parseInt(rentalData[0])),
+                    Integer.parseInt(rentalData[1])
+            );
+
             frequentRenterPoints += rental.getFrequentRenterPoints();
 
             // create figures for this rental
