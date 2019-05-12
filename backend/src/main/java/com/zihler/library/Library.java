@@ -3,10 +3,10 @@ package com.zihler.library;
 import com.zihler.library.dataaccess.BookRepository;
 import com.zihler.library.domain.Book;
 import com.zihler.library.domain.Rental;
+import com.zihler.library.domain.RentalFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,10 +18,12 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 public class Library {
 
     private BookRepository bookRepository;
+    private RentalFactory rentalFactory;
 
     @Autowired
     public Library(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
+        this.rentalFactory = new RentalFactory(bookRepository);
     }
 
     @GetMapping(value = "/books", produces = APPLICATION_JSON_UTF8_VALUE)
@@ -51,13 +53,7 @@ public class Library {
         String result = "Rental Record for " + customerName + "\n";
 
         for (int i = 0; i < rentalRequests.size(); i++) {
-            String nextRequest = rentalRequests.get(i);
-            final String[] rentalData = nextRequest.split(" ");
-
-            Rental rental = new Rental(
-                    bookRepository.getByKey(Integer.parseInt(rentalData[0])),
-                    Integer.parseInt(rentalData[1])
-            );
+            Rental rental = rentalFactory.createFrom(rentalRequests.get(i));
 
             frequentRenterPoints += rental.getFrequentRenterPoints();
 
