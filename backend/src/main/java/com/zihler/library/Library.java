@@ -62,20 +62,20 @@ public class Library {
             double thisAmount = 0;
 
             int daysRented = Integer.parseInt(rental[1]);
-            String averageRating =  book[3];
-            switch (averageRating) {
-                case "REGULAR":
+            String readingMode =  book[3];
+            switch (readingMode) {
+                case "IMAGE":
                     thisAmount += 2;
                     if (daysRented > 2)
                         thisAmount += (daysRented - 2) * 1.5;
                     break;
-                case "NEW_RELEASE":
-                    thisAmount += daysRented * 3;
-                    break;
-                case "CHILDRENS":
+                case "TEXT":
                     thisAmount += 1.5;
                     if (daysRented > 3)
                         thisAmount += (daysRented - 3) * 1.5;
+                    break;
+                case "BOTH":
+                    thisAmount += daysRented * 3;
                     break;
             }
 
@@ -83,7 +83,7 @@ public class Library {
             frequentRenterPoints++;
 
             // add bonus for a two day new release rental
-            if (averageRating.equals("REGULAR") && daysRented > 1) {
+            if (readingMode.equals("REGULAR") && daysRented > 1) {
                 frequentRenterPoints++;
             }
 

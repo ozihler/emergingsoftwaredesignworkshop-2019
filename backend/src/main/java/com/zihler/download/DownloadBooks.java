@@ -38,9 +38,9 @@ public class DownloadBooks {
         int idCounter = Files.readAllLines(path).size();
         for (Item item : booksFromQuery.getItems()) {
 
-//            if (!item.hasAverageRating()) {
-//                continue;
-//            }
+            if (!item.hasAverageRating()) {
+                continue;
+            }
 
             String thingsToSave = (idCounter++) + ";"
                     + item.getVolumeInfo().getTitle()
@@ -54,8 +54,17 @@ public class DownloadBooks {
 
     }
 
-    private static Double getStrategyValue(Item item) {
-        return item.getVolumeInfo().getAverageRating();
+    private static String getStrategyValue(Item item) {
+        ReadingModes readingModes = item.getVolumeInfo().getReadingModes();
+        if (readingModes.isImage()) {
+            if (readingModes.isText()) {
+                return "BOTH";
+            } else {
+                return "IMAGE";
+            }
+        } else {
+            return "TEXT";
+        }
     }
 
     private static String imageLink(Item item) {
