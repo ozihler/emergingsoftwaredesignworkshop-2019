@@ -48,15 +48,14 @@ public class Library {
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) {
         String customerName = rentalRequests.remove(0);
 
-        double totalAmount = 0;
-        int frequentRenterPoints = 0;
+
+        List<Rental> rentals = rentalFactory.createFrom(rentalRequests);
+
+        int frequentRenterPoints = getFrequentRenterPoints(rentals);
+        double totalAmount = getTotalAmount(rentals);
+
         String result = "Rental Record for " + customerName + "\n";
-
-        for (int i = 0; i < rentalRequests.size(); i++) {
-            Rental rental = rentalFactory.createFrom(rentalRequests.get(i));
-
-            frequentRenterPoints += rental.getFrequentRenterPoints();
-
+        for (Rental rental : rentals) {
             // create figures for this rental
             result += "\t'" + rental.getBookName()
                     + "' by '" + rental.getBookAuthors()
@@ -64,15 +63,30 @@ public class Library {
                     + " days: \t"
                     + rental.getAmount()
                     + " $\n";
-
-            totalAmount += rental.getAmount();
         }
+
 
         // add footer lines
         result += "You owe " + totalAmount + " $\n";
         result += "You earned " + frequentRenterPoints + " frequent renter points\n";
 
         return List.of(result);
+    }
+
+    private double getTotalAmount(List<Rental> rentals) {
+        double totalAmount = 0;
+        for (Rental rental : rentals) {
+            totalAmount += rental.getAmount();
+        }
+        return totalAmount;
+    }
+
+    private int getFrequentRenterPoints(List<Rental> rentals) {
+        int frequentRenterPoints = 0;
+        for (Rental rental : rentals) {
+            frequentRenterPoints += rental.getFrequentRenterPoints();
+        }
+        return frequentRenterPoints;
     }
 
 }
