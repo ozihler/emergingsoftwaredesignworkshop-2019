@@ -1,9 +1,7 @@
-package com.zihler.library;
+package com.zihler.library.presentation;
 
 import com.zihler.library.dataaccess.BookRepository;
-import com.zihler.library.domain.Book;
-import com.zihler.library.domain.Rental;
-import com.zihler.library.domain.RentalFactory;
+import com.zihler.library.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,46 +45,13 @@ public class Library {
     @PostMapping("/fee")
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) {
         String customerName = rentalRequests.remove(0);
-
-
         List<Rental> rentals = rentalFactory.createFrom(rentalRequests);
 
-        int frequentRenterPoints = getFrequentRenterPoints(rentals);
-        double totalAmount = getTotalAmount(rentals);
+        RentalRecord rentalRecord = new RentalRecord(customerName, rentals);
 
-        String result = "Rental Record for " + customerName + "\n";
-        for (Rental rental : rentals) {
-            // create figures for this rental
-            result += "\t'" + rental.getBookName()
-                    + "' by '" + rental.getBookAuthors()
-                    + "' for " + rental.getDaysRented()
-                    + " days: \t"
-                    + rental.getAmount()
-                    + " $\n";
-        }
+        Receipt receipt = Receipt.createFor(rentalRecord);
 
-
-        // add footer lines
-        result += "You owe " + totalAmount + " $\n";
-        result += "You earned " + frequentRenterPoints + " frequent renter points\n";
-
-        return List.of(result);
-    }
-
-    private double getTotalAmount(List<Rental> rentals) {
-        double totalAmount = 0;
-        for (Rental rental : rentals) {
-            totalAmount += rental.getAmount();
-        }
-        return totalAmount;
-    }
-
-    private int getFrequentRenterPoints(List<Rental> rentals) {
-        int frequentRenterPoints = 0;
-        for (Rental rental : rentals) {
-            frequentRenterPoints += rental.getFrequentRenterPoints();
-        }
-        return frequentRenterPoints;
+        return List.of(receipt.formatForDisplay());
     }
 
 }

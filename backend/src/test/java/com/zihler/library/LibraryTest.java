@@ -1,6 +1,7 @@
 package com.zihler.library;
 
 import com.zihler.library.dataaccess.BookRepository;
+import com.zihler.library.presentation.Library;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,8 +1,6 @@
 package com.zihler.library.domain;
 
-import com.zihler.library.Library;
 import com.zihler.library.dataaccess.BookRepository;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;
