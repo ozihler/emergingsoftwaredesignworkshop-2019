@@ -2,9 +2,9 @@ package com.zihler.library.domain;
 
 public class Book {
     private final int key;
-    public final String title;
-    public final String authors;
-    public final String readingMode;
+    private final String title;
+    private final String authors;
+    private final String readingMode;
     private final String link;
 
     private Book(int key, String title, String authors, String readingMode, String link) {
@@ -21,5 +21,25 @@ public class Book {
 
     public static Book from(String line) {
         return from(line.split(";"));
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthors() {
+        return authors;
+    }
+
+    public String getReadingMode() {
+        return readingMode;
+    }
+
+    public String getLink() {
+        return link;
     }
 }
