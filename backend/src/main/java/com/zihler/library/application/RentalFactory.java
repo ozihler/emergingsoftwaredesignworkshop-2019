@@ -4,6 +4,7 @@ import com.zihler.library.domain.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class RentalFactory {
     private IRetrieveBooks IRetrieveBooks;
@@ -13,12 +14,9 @@ class RentalFactory {
     }
 
     List<Rental> createFrom(List<String> rentalRequests) {
-        List<Rental> rentals = new ArrayList<>();
-        for (String rentalRequest : rentalRequests) {
-            Rental from = createFrom(rentalRequest);
-            rentals.add(from);
-        }
-        return rentals;
+        return rentalRequests.stream()
+                .map(this::createFrom)
+                .collect(Collectors.toList());
     }
 
     private Rental createFrom(String nextRequest) {
