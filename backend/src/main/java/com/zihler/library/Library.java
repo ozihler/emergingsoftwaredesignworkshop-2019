@@ -46,8 +46,6 @@ public class Library {
     public List<String> calculateFee(@RequestBody List<String> rentalRequests) {
         String customerName = rentalRequests.remove(0);
 
-        final List<Book> books = bookRepository.getAll();
-
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         String result = "Rental Record for " + customerName + "\n";
