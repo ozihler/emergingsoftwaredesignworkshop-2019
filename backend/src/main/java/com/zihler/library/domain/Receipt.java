@@ -1,7 +1,4 @@
-package com.zihler.library.application;
-
-import com.zihler.library.domain.Rental;
-import com.zihler.library.domain.RentalRecord;
+package com.zihler.library.domain;
 
 public class Receipt {
     private RentalRecord rentalRecord;
@@ -14,7 +11,8 @@ public class Receipt {
         return new Receipt(rentalRecord);
     }
 
-    public String formatForDisplay() {
+    @Override
+    public String toString() {
         String result = appendHeader();
         result += appendRentals();
         result += appendFooter();
@@ -22,11 +20,11 @@ public class Receipt {
     }
 
     private String appendFrequentRenterPoints() {
-        return String.format("You earned %d frequent renter points\n", getRentalRecord().getFrequentRenterPoints());
+        return String.format("You earned %d frequent renter points\n", this.rentalRecord.getFrequentRenterPoints());
     }
 
     private String appendTotalAmount() {
-        return String.format("You owe %s $\n", getRentalRecord().getTotalAmount());
+        return String.format("You owe %s $\n", this.rentalRecord.getTotalAmount());
     }
 
     private String appendFooter() {
@@ -35,18 +33,14 @@ public class Receipt {
         return result;
     }
 
-    private RentalRecord getRentalRecord() {
-        return this.rentalRecord;
-    }
-
     private String appendHeader() {
-        return String.format("Rental Record for %s\n", getRentalRecord().getCustomerName());
+        return String.format("Rental Record for %s\n", this.rentalRecord.getCustomerName());
     }
 
     private String appendRentals() {
         StringBuilder result = new StringBuilder();
-        for (Rental rental : getRentalRecord().getRentals()) {
-             result.append(format(rental));
+        for (Rental rental : this.rentalRecord.getRentals()) {
+            result.append(format(rental));
         }
         return result.toString();
     }

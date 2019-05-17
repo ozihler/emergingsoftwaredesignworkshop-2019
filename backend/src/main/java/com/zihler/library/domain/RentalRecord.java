@@ -1,37 +1,31 @@
 package com.zihler.library.domain;
 
-import java.util.List;
-
 public class RentalRecord {
-    private final String customerName;
-    private final List<Rental> rentals;
+    private final Customer customer;
+    private final Rentals rentals;
 
-    public RentalRecord(String customerName, List<Rental> rentals) {
-        this.customerName = customerName;
+    public RentalRecord(Customer customer, Rentals rentals) {
+        this.customer = customer;
         this.rentals = rentals;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    String getCustomerName() {
+        return customer.getName();
     }
 
-    public List<Rental> getRentals() {
+    Rentals getRentals() {
         return rentals;
     }
 
-    public int getFrequentRenterPoints() {
-        int frequentRenterPoints = 0;
-        for (Rental rental : getRentals()) {
-            frequentRenterPoints += rental.getFrequentRenterPoints();
-        }
-        return frequentRenterPoints;
+    int getFrequentRenterPoints() {
+        return rentals.stream()
+                .mapToInt(Rental::getFrequentRenterPoints)
+                .sum();
     }
 
-    public double getTotalAmount() {
-        double totalAmount = 0;
-        for (Rental rental : getRentals()) {
-            totalAmount += rental.getAmount();
-        }
-        return totalAmount;
+    double getTotalAmount() {
+        return rentals.stream()
+                .mapToDouble(Rental::getAmount)
+                .sum();
     }
 }

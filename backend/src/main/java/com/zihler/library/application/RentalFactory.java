@@ -2,41 +2,43 @@ package com.zihler.library.application;
 
 import com.zihler.library.domain.*;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 class RentalFactory {
-    private IRetrieveBooks IRetrieveBooks;
+    private IRetrieveBooks iRetrieveBooks;
 
-    RentalFactory(IRetrieveBooks IRetrieveBooks) {
-        this.IRetrieveBooks = IRetrieveBooks;
+    RentalFactory(IRetrieveBooks iRetrieveBooks) {
+        this.iRetrieveBooks = iRetrieveBooks;
     }
 
-    List<Rental> createFrom(List<String> rentalRequests) {
-        return rentalRequests.stream()
+    Rentals createFrom(RentalRequests requests) {
+        Rentals rentals = new Rentals();
+
+        requests.getRentalRequests()
+                .stream()
                 .map(this::createFrom)
-                .collect(Collectors.toList());
+                .forEach(rentals::add);
+
+        return rentals;
     }
 
     private Rental createFrom(String nextRequest) {
         final String[] rentalData = nextRequest.split(" ");
 
         return create(
-                IRetrieveBooks.getByKey(Integer.parseInt(rentalData[0])),
+                iRetrieveBooks.getByKey(Integer.parseInt(rentalData[0])),
                 Integer.parseInt(rentalData[1])
         );
     }
 
     private static Rental create(Book book, int daysRented) {
         switch (book.getReadingMode()) {
-            case "IMAGE":
+            case IMAGE:
                 return new ImageRental(book, daysRented);
-            case "TEXT":
+            case TEXT:
                 return new TextRental(book, daysRented);
-            case "BOTH":
-                return new AllModesRental(book, daysRented);
+            case BOTH:
+                return new BothModesRental(book, daysRented);
             default:
-                throw new IllegalArgumentException(String.format("Could not find rental type %s", book.getReadingMode()));
+                throw new IllegalArgumentException(String.format("Could not find rental type %s", book.getReadingMode().name()));
         }
     }
 }

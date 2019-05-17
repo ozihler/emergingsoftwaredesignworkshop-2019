@@ -2,6 +2,7 @@ package com.zihler.library.dataaccess;
 
 import com.zihler.library.application.IRetrieveBooks;
 import com.zihler.library.domain.Book;
+import com.zihler.library.domain.Books;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Component
 public class BookRepository implements IRetrieveBooks {
-    private final List<Book> books;
+    private final Books books;
 
     public BookRepository(ResourceLoader resourceLoader) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(
@@ -23,7 +24,7 @@ public class BookRepository implements IRetrieveBooks {
                 )
         );
 
-        this.books = new ArrayList<>();
+        this.books = new Books();
 
         while (bufferedReader.ready()) {
             books.add(Book.from(bufferedReader.readLine()));
@@ -31,7 +32,7 @@ public class BookRepository implements IRetrieveBooks {
     }
 
     @Override
-    public List<Book> getAll() {
+    public Books getAll() {
         return books;
     }
 

@@ -1,8 +1,6 @@
 package com.zihler.library.application;
 
-import com.zihler.library.domain.Book;
-import com.zihler.library.domain.Rental;
-import com.zihler.library.domain.RentalRecord;
+import com.zihler.library.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,30 +19,29 @@ public class BookService {
     }
 
     public List<String[]> getAllBooks() {
-        List<Book> all = iRetrieveBooks.getAll();
+        Books allBooks = iRetrieveBooks.getAll();
         ArrayList<String[]> booksAsStringArray = new ArrayList<>();
-        for (Book book : all) {
+        for (Book book : allBooks) {
             booksAsStringArray.add(
                     new String[]{
                             Integer.toString(book.getKey()),
                             book.getTitle(),
                             book.getAuthors(),
-                            book.getReadingMode(),
-                            book.getLink()
+                            book.getReadingMode().name(),
+                            book.getImageLink()
                     }
             );
         }
         return booksAsStringArray;
     }
 
-    public List<String> calculateFeeFor(List<String> rentalRequests) {
-        String customerName = rentalRequests.remove(0);
-        List<Rental> rentals = rentalFactory.createFrom(rentalRequests);
+    public List<String> calculateFeeFor(RentalOrder rentalOrder) {
+        Rentals rentals = rentalFactory.createFrom(rentalOrder.getRentalRequests());
 
-        RentalRecord rentalRecord = new RentalRecord(customerName, rentals);
+        RentalRecord rentalRecord = new RentalRecord(rentalOrder.getCustomer(), rentals);
 
         Receipt receipt = Receipt.createFor(rentalRecord);
 
-        return List.of(receipt.formatForDisplay());
+        return List.of(receipt.toString());
     }
 }

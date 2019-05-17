@@ -1,5 +1,7 @@
 package com.zihler.library.domain;
 
+import static com.zihler.library.domain.ReadingMode.BOTH;
+
 public abstract class Rental {
     private  final Book book;
     private final int daysRented;
@@ -12,29 +14,22 @@ public abstract class Rental {
     public abstract double getAmount();
 
     int getFrequentRenterPoints() {
-        // add frequent renter points
-        int frequentRenterPoints = 1;
-
-        // add bonus for a reading mode "both"
-        if (getBook().getReadingMode().equals("BOTH") && getDaysRented() > 1) {
-            frequentRenterPoints++;
+        if (book.getReadingMode() == BOTH && daysRented > 1) {
+            return 2;
         }
-        return frequentRenterPoints;
+
+        return 1;
     }
 
-    public String getBookName() {
-        return getBook().getTitle();
+    String getBookName() {
+        return book.getTitle();
     }
 
-    public String getBookAuthors() {
-        return getBook().getAuthors();
+    String getBookAuthors() {
+        return book.getAuthors();
     }
 
-    private Book getBook() {
-        return book;
-    }
-
-    public int getDaysRented() {
+    int getDaysRented() {
         return daysRented;
     }
 }
