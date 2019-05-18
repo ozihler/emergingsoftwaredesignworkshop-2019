@@ -1,10 +1,8 @@
 package com.zihler.library;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.http.MediaType;
@@ -13,6 +11,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -25,10 +25,11 @@ public class LibraryTest {
 
 
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         DefaultResourceLoader resourceLoader = new DefaultResourceLoader();
 
-        library = new Library(resourceLoader);
+        final BookRepository bookRepository = new FileBasedBookRepository(resourceLoader);
+        library = new Library(new RentalService(bookRepository, new RentalFactory(bookRepository)));
         mvc = MockMvcBuilders.standaloneSetup(library)
                 .build();
     }
@@ -61,14 +62,12 @@ public class LibraryTest {
                 .andReturn()
                 .getResponse();
 
-        String expected = new StringBuilder()
-                .append("[\"Rental Record for hansmeier\\n")
-                .append("\\t'Refactoring to patterns' by 'Joshua Kerievsky' for 3 days: \\t3.5 $\\n")
-                .append("\\t'Clean Code' by 'Robert C. Martin' for 4 days: \\t12.0 $\\n")
-                .append("\\t'Der Pragmatische Programmierer' by 'Andrew Hunt,David Thomas' for 4 days: \\t3.0 $\\n")
-                .append("You owe 18.5 $")
-                .append("\\nYou earned 4 frequent renter points\\n\"]")
-                .toString();
+        String expected = "[\"Rental Record for hansmeier\\n" +
+                "\\t'Refactoring to patterns' by 'Joshua Kerievsky' for 3 days: \\t3.5 $\\n" +
+                "\\t'Clean Code' by 'Robert C. Martin' for 4 days: \\t12.0 $\\n" +
+                "\\t'Der Pragmatische Programmierer' by 'Andrew Hunt,David Thomas' for 4 days: \\t3.0 $\\n" +
+                "You owe 18.5 $" +
+                "\\nYou earned 4 frequent renter points\\n\"]";
 
         assertEquals(expected, response.getContentAsString());
     }
