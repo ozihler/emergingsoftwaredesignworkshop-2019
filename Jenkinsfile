@@ -25,5 +25,18 @@ pipeline {
                     sh "./gradlew check"
             }
         }
+        stage("Check code quality and coverage") {
+            steps {
+                sh "chmod +x gradlew"
+                sh "./gradlew jacocoTestReport"
+                step([
+                    $class : 'JacocoPublisher',
+                    sourcePattern: '**/src/main/java, **/src/test/java'
+                    classPattern: '**/build/classes'
+                    exclusionPattern: '**/*Test.class'
+                    execPattern: '**/build/jacoco/*.exec'
+                ])
+            }
+        }
     }
 }
