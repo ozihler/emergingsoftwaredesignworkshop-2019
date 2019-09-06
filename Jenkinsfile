@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                    sh "sh echo $JAVA_HOME"
                     sh "chmod +x gradlew"
                     sh "./gradlew clean build"
             }
