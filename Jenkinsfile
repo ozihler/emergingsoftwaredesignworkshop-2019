@@ -1,9 +1,9 @@
 
 
 pipeline {
-    env.JAVA_HOME="${tool 'jdk-8u45'}"
-    env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
-    sh 'java -version'
+     tools {
+        jdk 'JDK_11.0.1'
+     }
 
     agent any
     stages {
