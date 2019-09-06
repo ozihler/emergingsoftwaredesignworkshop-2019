@@ -9,25 +9,22 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew clean"
+                sh "chmod +x gradlew"
+                     sh "./gradlew clean"
             }
         }
         stage('Build') {
             steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew build"
+                     sh "./gradlew build"
             }
         }
         stage('Test') {
             steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew check"
+                     sh "./gradlew check"
             }
         }
         stage("Check code quality and coverage") {
             steps {
-                sh "chmod +x gradlew"
                 sh "./gradlew jacocoTestReport"
                 step([
                     $class : 'JacocoPublisher',
