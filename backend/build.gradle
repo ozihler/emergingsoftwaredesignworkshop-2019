@@ -30,7 +30,14 @@ jacoco {
 test {
     useJUnitPlatform();
 }
-
+[test].each {
+    task ->
+        configure(task) {
+            jacoco {
+                enabled = true
+            }
+        }
+}
 jacocoTestReport {
     executionData test
     afterEvaluate {
