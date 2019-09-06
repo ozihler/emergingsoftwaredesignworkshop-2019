@@ -31,9 +31,9 @@ pipeline {
                 sh "./gradlew jacocoTestReport"
                 step([
                     $class : 'JacocoPublisher',
-                    sourcePattern: '**/src/main/java, **/src/test/java'
-                    classPattern: '**/build/classes'
-                    exclusionPattern: '**/*Test.class'
+                    sourcePattern: '**/src/main/java, **/src/test/java',
+                    classPattern: '**/build/classes',
+                    exclusionPattern: '**/*Test.class',
                     execPattern: '**/build/jacoco/*.exec'
                 ])
             }
