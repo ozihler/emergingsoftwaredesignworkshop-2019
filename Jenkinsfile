@@ -2,7 +2,7 @@
 
 pipeline {
      tools {
-        jdk 'JDK_11.0.1'
+        jdk 'JDK11'
      }
 
     agent any
