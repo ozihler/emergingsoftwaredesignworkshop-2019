@@ -38,7 +38,7 @@ public class LibraryTest {
     public void testGetAllBooks() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/api/library/books")
-                .accept(MediaType.APPLICATION_JSON))
+                .accept(MediaType.APPLICATION_JSON_UTF8))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andReturn();
