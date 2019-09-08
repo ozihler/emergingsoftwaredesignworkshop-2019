@@ -34,22 +34,7 @@ test {
         exclude '**/module-info.class'
     }
 }
-[test].each {
-    task ->
-        configure(task) {
-            jacoco {
-                enabled = true
-            }
-        }
-}
-jacocoTestReport {
-    executionData test
-    afterEvaluate {
-        classDirectories = files(fileTree(dir: 'build/classes/java/main').files.collect {
-            fileTree(dir: it)
-        })
-    }
-}
+
 // https://stackoverflow.com/questions/26389679/running-spring-app-built-with-gradle-on-heroku?rq=1
 // https://stackoverflow.com/questions/33727502/gradle-leftshift-operator-with-task-needed-is-it-superfluous
 task moveJarToProjectFolder(type: Copy, dependsOn: [clean, build]) {
