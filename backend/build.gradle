@@ -48,14 +48,15 @@ jacocoTestReport {
 }
 // https://stackoverflow.com/questions/26389679/running-spring-app-built-with-gradle-on-heroku?rq=1
 // https://stackoverflow.com/questions/33727502/gradle-leftshift-operator-with-task-needed-is-it-superfluous
-task stage(type: Copy, dependsOn: [clean, build]) {
+task moveJarToProjectFolder(type: Copy, dependsOn: [clean, build]) {
     from jar.archivePath
     into project.rootDir
     rename {
         'app.jar'
     }
 }
-stage.mustRunAfter(clean)
+
+moveJarToProjectFolder.mustRunAfter(clean)
 
 clean {
     doLast {
