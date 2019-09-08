@@ -29,6 +29,10 @@ jacoco {
 
 test {
     useJUnitPlatform();
+
+    filter {
+        exclude '**/module-info.class'
+    }
 }
 [test].each {
     task ->
