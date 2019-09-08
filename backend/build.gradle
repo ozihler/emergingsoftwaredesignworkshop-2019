@@ -14,7 +14,6 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-
 sourceCompatibility = 1.11
 targetCompatibility = 1.11
 
@@ -22,21 +21,16 @@ repositories {
     mavenCentral()
 }
 
-test {
-    useJUnitPlatform()
-}
-
 // https://stackoverflow.com/questions/26389679/running-spring-app-built-with-gradle-on-heroku?rq=1
 // https://stackoverflow.com/questions/33727502/gradle-leftshift-operator-with-task-needed-is-it-superfluous
-task moveJarToProjectFolder(type: Copy, dependsOn: [clean, build]) {
+task stage(type: Copy, dependsOn: [clean, build]) {
     from jar.archivePath
     into project.rootDir
     rename {
         'app.jar'
     }
 }
-
-moveJarToProjectFolder.mustRunAfter(clean)
+stage.mustRunAfter(clean)
 
 clean {
     doLast {
