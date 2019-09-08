@@ -14,17 +14,12 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'jacoco'
 
 sourceCompatibility = 1.11
 targetCompatibility = 1.11
 
 repositories {
     mavenCentral()
-}
-
-jacoco {
-    toolVersion = "0.8.2"
 }
 
 test {
