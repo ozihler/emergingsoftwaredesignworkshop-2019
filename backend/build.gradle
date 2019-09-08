@@ -28,11 +28,7 @@ jacoco {
 }
 
 test {
-    useJUnitPlatform();
-
-    filter {
-        exclude '**/module-info.class'
-    }
+    useJUnitPlatform()
 }
 
 // https://stackoverflow.com/questions/26389679/running-spring-app-built-with-gradle-on-heroku?rq=1
