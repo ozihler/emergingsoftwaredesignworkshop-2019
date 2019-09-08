@@ -25,5 +25,10 @@ pipeline {
                     sh "./gradlew check"
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'cd backend/build/libs && java backend.jar"
+            }
+        }
     }
 }
