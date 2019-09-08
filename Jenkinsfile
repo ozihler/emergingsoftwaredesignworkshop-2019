@@ -10,7 +10,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'cd ${projectDir()}/backend/build/libs && java backend-0.1.0-SNAPSHOT.jar'
+                sh '/var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs && java backend-0.1.0-SNAPSHOT.jar'
             }
         }
     }
