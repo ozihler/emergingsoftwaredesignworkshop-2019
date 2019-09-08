@@ -27,7 +27,9 @@ pipeline {
         }
          stage('Deploy') {
                     steps {
-                        sh '/var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs/ && java backend-0.1.0-SNAPSHOT.jar'
+                        sh 'chmod +x var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs/'
+                        sh 'var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs/'
+                        sh 'java backend-0.1.0-SNAPSHOT.jar'
                     }
                 }
     }
