@@ -7,11 +7,28 @@ pipeline {
       }
 
     stages {
-
-        stage('Deploy') {
+        stage('Clean') {
             steps {
-                sh '/var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs/ && java backend-0.1.0-SNAPSHOT.jar'
+                    sh "chmod +x gradlew"
+                    sh "./gradlew clean"
             }
         }
+        stage('Build') {
+            steps {
+                    sh "chmod +x gradlew"
+                    sh "./gradlew build"
+            }
+        }
+        stage('Test') {
+            steps {
+                    sh "chmod +x gradlew"
+                    sh "./gradlew check"
+            }
+        }
+         stage('Deploy') {
+                    steps {
+                        sh '/var/jenkins_home/workspace/emerging-software-design-workshop/backend/build/libs/ && java backend-0.1.0-SNAPSHOT.jar'
+                    }
+                }
     }
 }
