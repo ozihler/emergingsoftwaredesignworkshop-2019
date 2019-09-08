@@ -7,24 +7,7 @@ pipeline {
       }
 
     stages {
-        stage('Clean') {
-            steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew clean"
-            }
-        }
-        stage('Build') {
-            steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew build"
-            }
-        }
-        stage('Test') {
-            steps {
-                    sh "chmod +x gradlew"
-                    sh "./gradlew check"
-            }
-        }
+
         stage('Deploy') {
             steps {
                 sh 'cd ${projectDir()}/backend/build/libs && java backend-0.1.0-SNAPSHOT.jar'
